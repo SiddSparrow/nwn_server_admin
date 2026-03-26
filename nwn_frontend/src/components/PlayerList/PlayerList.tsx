@@ -29,7 +29,7 @@ export const PlayerList: React.FC = () => {
 
   return (
     <div className="w-full max-w-3xl">
-      <h2 className="text-xl font-semibold text-white mb-4">
+      <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">
         Jogadores Online — {players.length}
       </h2>
       <PlayerTable players={players} />
