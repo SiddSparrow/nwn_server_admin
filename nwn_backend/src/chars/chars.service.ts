@@ -19,6 +19,9 @@ export class CharsService {
   }
 
   findByIsOn(isOn: number): Promise<Char[]> {
-    return this.charsRepository.findBy({ is_on: isOn });
+    return this.charsRepository.find({
+      where: { is_on: isOn },
+      relations: ['player'],
+    });
   }
 }
