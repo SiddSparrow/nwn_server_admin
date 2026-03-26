@@ -13,7 +13,7 @@ export const PlayerList: React.FC = () => {
       .then(setPlayers)
       .catch(() => setError('Erro ao buscar jogadores online.'))
       .finally(() => setLoading(false));
-  }, []); 
+  }, []);  
 
   if (loading) {
     return <p className="text-white/60 text-lg">Carregando...</p>;
