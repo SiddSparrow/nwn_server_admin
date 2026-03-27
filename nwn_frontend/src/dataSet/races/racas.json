@@ -7,7 +7,7 @@
       "traits": [
         { "description": "Características: Padrão — sem modificadores de atributo." }
       ],
-      "image": "humano.png"
+      "image": "humano.webp"
     },
     {
       "race": "Anão do Escudo",
@@ -21,7 +21,7 @@
       "traits": [
         { "description": "Constituição: +2" }
       ],
-      "image": "anao_escudo.png"
+      "image": "anao_escudo.webp"
     },
     {
       "race": "Anão Dourado",
@@ -34,7 +34,7 @@
       "traits": [
         { "description": "Carisma: +2" }
       ],
-      "image": "anao_dourado.png"
+      "image": "anao_dourado.webp"
     },
     {
       "race": "Gnomo",
@@ -43,7 +43,7 @@
       "traits": [
         { "description": "Inteligência: +2 (substitui o bônus padrão de Constituição)" }
       ],
-      "image": "gnomo.png"
+      "image": "gnomo.webp"
     },
     {
       "race": "Halfling",
@@ -52,7 +52,7 @@
       "traits": [
         { "description": "Destreza: +2" }
       ],
-      "image": "halfling.png"
+      "image": "halfling.webp"
     },
     {
       "race": "Elfo da Lua",
@@ -61,7 +61,7 @@
       "traits": [
         { "description": "Destreza: +2" }
       ],
-      "image": "elfo_lua.png"
+      "image": "elfo_lua.webp"
     },
     {
       "race": "Elfo Solar",
@@ -70,7 +70,7 @@
       "traits": [
         { "description": "Inteligência: +2" }
       ],
-      "image": "elfo_solar.png"
+      "image": "elfo_solar.webp"
     },
     {
       "race": "Elfo Negro",
@@ -80,7 +80,7 @@
         { "description": "Destreza: +2" },
         { "description": "Carisma: +2" }
       ],
-      "image": "elfo_negro.png"
+      "image": "elfo_negro.webp"
     },
     {
       "race": "Meio-Elfo",
@@ -90,7 +90,7 @@
         { "description": "Carisma: +2" },
         { "description": "Proficiência com armas élficas: Arco Longo, Arco Curto, Espada Longa e Sabre." }
       ],
-      "image": "meio-elfo.png"
+      "image": "meio-elfo.webp"
     },
     {
       "race": "Meio-Orc Pituk",
@@ -100,7 +100,7 @@
         { "description": "Constituição: +2" },
         { "description": "Ódio Ancestral: +2 em rolagens de ataque e dano contra orcs." }
       ],
-      "image": "meio_pituk.png"
+      "image": "meio_pituk.webp"
     },
     {
       "race": "Meio-Orc Uruk",
@@ -110,7 +110,7 @@
         { "description": "Força: +2" },
         { "description": "Última Resistência (1×/dia): Ao cair abaixo de 0 PV pela primeira vez, o meio-orc se ergue com PV iguais ao seu nível + modificador de Constituição, e recebe Redução de Dano 5/+5 por 12 segundos." }
       ],
-      "image": "meio_uruk.png"
+      "image": "meio_uruk.webp"
     },
     {
       "race": "Aasimar",
@@ -123,7 +123,7 @@
         { "description": "Resistência Elemental (Ácido, Frio, Elétrico): 5" },
         { "description": "Luz (1×/dia): Luz intensa com nível de conjurador igual ao nível do personagem." }
       ],
-      "image": "aasimar.png"
+      "image": "aasimar.webp"
     },
     {
       "race": "Tiefling",
@@ -136,7 +136,7 @@
         { "description": "Resistência Elemental (Fogo, Frio, Elétrico): 5" },
         { "description": "Escuridão (1×/dia): Nível de conjurador igual ao nível total do personagem." }
       ],
-      "image": "tiefling.png"
+      "image": "tiefling.webp"
     },
     {
       "race": "Shadar-Kai",
@@ -150,7 +150,7 @@
         { "description": "Weapon Finesse: Concedido automaticamente." },
         { "description": "Salto das Sombras (40 ft/dia): Teleporte via sombras, limitado pela linha de visão. A distância total acumulada é de 40 ft por dia. Somado ao salto da classe Dançarino das Sombras, se aplicável." }
       ],
-      "image": "shadarkai.png"
+      "image": "shadarkai.webp"
     },
     {
       "race": "Genasi da Terra",
@@ -161,7 +161,7 @@
         { "description": "Escalada: Sucesso automático em rolagens de escalada." },
         { "description": "Herança da Pedra (1×/dia): Proteção similar a Stoneskin, RD 5/+5 por 1 hora/nível. Pontos absorvidos = nível × (Constituição ÷ 2)." }
       ],
-      "image": "genasi_terra.png"
+      "image": "genasi_terra.webp"
     },
     {
       "race": "Genasi da Água",
@@ -173,7 +173,7 @@
         { "description": "Imunidade Parcial ao Frio: 25%" },
         { "description": "Redução de Dano Elemental (Frio): 5" }
       ],
-      "image": "genasi_agua.png"
+      "image": "genasi_agua.webp"
     },
     {
       "race": "Genasi do Ar",
@@ -184,7 +184,7 @@
         { "description": "Imunidade a Afogamento" },
         { "description": "Deflexão Estática: Ataques físicos à distância têm chance de ser defletidos. % de deflexão = Destreza + (nível ÷ 2)." }
       ],
-      "image": "genasi_ar.png"
+      "image": "genasi_ar.webp"
     },
     {
       "race": "Genasi do Fogo",
@@ -195,7 +195,7 @@
         { "description": "Imunidade Parcial ao Fogo: 25%" },
         { "description": "Redução de Dano Elemental (Fogo): 5" }
       ],
-      "image": "genasi_fogo.png"
+      "image": "genasi_fogo.webp"
     },
     {
       "race": "Minotauro",
@@ -208,7 +208,7 @@
         { "description": "Classe de Armadura: +2" },
         { "description": "Visão no Escuro (Darkvision)" }
       ],
-      "image": "minotauro.png"
+      "image": "minotauro.webp"
     },
     {
       "race": "Goblin",
@@ -222,7 +222,7 @@
         { "description": "Busca, Armadilhas, Desarmar Dispositivos e Disfarce: +2 em cada" },
         { "description": "Visão no Escuro (Darkvision)" }
       ],
-      "image": "goblin.png"
+      "image": "goblin.webp"
     },
     {
       "race": "Dríade",
@@ -234,7 +234,7 @@
         { "description": "Visão na Penumbra (Low-Light Vision)" },
         { "description": "Casca da Floresta (1×/dia): Proteção similar a Barkskin, com nível de conjurador igual ao nível total do personagem." }
       ],
-      "image": "driade.png"
+      "image": "driade.webp"
     },
     {
       "race": "Sátiro",
@@ -247,7 +247,7 @@
         { "description": "Movimento Silencioso e Furtividade (Hide): +2" },
         { "description": "Busca (Search), Percepção (Spot) e Escuta (Listen): +2" }
       ],
-      "image": "satiro.png"
+      "image": "satiro.webp"
     }
   ]
 }

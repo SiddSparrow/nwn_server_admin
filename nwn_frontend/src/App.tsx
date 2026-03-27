@@ -4,7 +4,7 @@ import { PlayerList } from './components/PlayerList/PlayerList';
 import { Regras } from './components/Regras/Regras';
 import { Racas } from './components/Racas/Racas';
 import { Classes } from './components/Classes/Classes';
-import nordockMap from './media/img/mapas/mundo/Nordock.jpg';
+import nordockMap from './media/img/mapas/mundo/Nordock.webp';
 import { Page } from './types';
 import { Skills } from './components/Skills/Skills';
 import { Feats } from './components/Feats/Feats';

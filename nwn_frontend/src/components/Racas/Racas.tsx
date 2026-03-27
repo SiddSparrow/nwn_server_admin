@@ -2,52 +2,52 @@ import React from 'react';
 import { AccordionList, AccordionItem } from '../AccordionList/AccordionList';
 import racasData from '../../dataSet/races/racas.json';
 
-import humano from '../../media/img/races/humano.png';
-import anaoEscudo from '../../media/img/races/anao_escudo.png';
-import anaoDourado from '../../media/img/races/anao_dourado.png';
-import gnomo from '../../media/img/races/gnomo.png';
-import halfling from '../../media/img/races/halfling.png';
-import elfoLua from '../../media/img/races/elfo_lua.png';
-import elfoSolar from '../../media/img/races/elfo_solar.png';
-import elfoNegro from '../../media/img/races/elfo_negro.png';
-import meioElfo from '../../media/img/races/meio-elfo.png';
-import meioPituk from '../../media/img/races/meio_pituk.png';
-import meioUruk from '../../media/img/races/meio_uruk.png';
-import aasimar from '../../media/img/races/aasimar.png';
-import tiefling from '../../media/img/races/tiefling.png';
-import shadarkai from '../../media/img/races/shadarkai.png';
-import genasiTerra from '../../media/img/races/genasi_terra.png';
-import genasiAgua from '../../media/img/races/genasi_agua.png';
-import genasiAr from '../../media/img/races/genasi_ar.png';
-import genasiFogo from '../../media/img/races/genasi_fogo.png';
-import minotauro from '../../media/img/races/minotauro.png';
-import goblin from '../../media/img/races/goblin.png';
-import driade from '../../media/img/races/driade.png';
-import satiro from '../../media/img/races/satiro.png';
+import humano from '../../media/img/races/humano.webp';
+import anaoEscudo from '../../media/img/races/anao_escudo.webp';
+import anaoDourado from '../../media/img/races/anao_dourado.webp';
+import gnomo from '../../media/img/races/gnomo.webp';
+import halfling from '../../media/img/races/halfling.webp';
+import elfoLua from '../../media/img/races/elfo_lua.webp';
+import elfoSolar from '../../media/img/races/elfo_solar.webp';
+import elfoNegro from '../../media/img/races/elfo_negro.webp';
+import meioElfo from '../../media/img/races/meio-elfo.webp';
+import meioPituk from '../../media/img/races/meio_pituk.webp';
+import meioUruk from '../../media/img/races/meio_uruk.webp';
+import aasimar from '../../media/img/races/aasimar.webp';
+import tiefling from '../../media/img/races/tiefling.webp';
+import shadarkai from '../../media/img/races/shadarkai.webp';
+import genasiTerra from '../../media/img/races/genasi_terra.webp';
+import genasiAgua from '../../media/img/races/genasi_agua.webp';
+import genasiAr from '../../media/img/races/genasi_ar.webp';
+import genasiFogo from '../../media/img/races/genasi_fogo.webp';
+import minotauro from '../../media/img/races/minotauro.webp';
+import goblin from '../../media/img/races/goblin.webp';
+import driade from '../../media/img/races/driade.webp';
+import satiro from '../../media/img/races/satiro.webp';
 
 const imageMap: Record<string, string> = {
-  'humano.png': humano,
-  'anao_escudo.png': anaoEscudo,
-  'anao_dourado.png': anaoDourado,
-  'gnomo.png': gnomo,
-  'halfling.png': halfling,
-  'elfo_lua.png': elfoLua,
-  'elfo_solar.png': elfoSolar,
-  'elfo_negro.png': elfoNegro,
-  'meio-elfo.png': meioElfo,
-  'meio_pituk.png': meioPituk,
-  'meio_uruk.png': meioUruk,
-  'aasimar.png': aasimar,
-  'tiefling.png': tiefling,
-  'shadarkai.png': shadarkai,
-  'genasi_terra.png': genasiTerra,
-  'genasi_agua.png': genasiAgua,
-  'genasi_ar.png': genasiAr,
-  'genasi_fogo.png': genasiFogo,
-  'minotauro.png': minotauro,
-  'goblin.png': goblin,
-  'driade.png': driade,
-  'satiro.png': satiro,
+  'humano.webp': humano,
+  'anao_escudo.webp': anaoEscudo,
+  'anao_dourado.webp': anaoDourado,
+  'gnomo.webp': gnomo,
+  'halfling.webp': halfling,
+  'elfo_lua.webp': elfoLua,
+  'elfo_solar.webp': elfoSolar,
+  'elfo_negro.webp': elfoNegro,
+  'meio-elfo.webp': meioElfo,
+  'meio_pituk.webp': meioPituk,
+  'meio_uruk.webp': meioUruk,
+  'aasimar.webp': aasimar,
+  'tiefling.webp': tiefling,
+  'shadarkai.webp': shadarkai,
+  'genasi_terra.webp': genasiTerra,
+  'genasi_agua.webp': genasiAgua,
+  'genasi_ar.webp': genasiAr,
+  'genasi_fogo.webp': genasiFogo,
+  'minotauro.webp': minotauro,
+  'goblin.webp': goblin,
+  'driade.webp': driade,
+  'satiro.webp': satiro,
 };
 
 const items: AccordionItem[] = racasData.races.map((race) => ({

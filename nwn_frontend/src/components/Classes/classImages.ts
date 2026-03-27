@@ -1,21 +1,21 @@
-import misterious from '../../media/img/classes/misterious.png';
+import misterious from '../../media/img/classes/misterious.webp';
 
-import barbarian from '../../media/img/classes/Barbarian/tonelada.png';
-import bard from '../../media/img/classes/Bard/orfeu.png';
-import assassin from '../../media/img/classes/Assassin/mephistue.png';
-import cleric from '../../media/img/classes/Cleric/image.png';
-import duelist from '../../media/img/classes/Duelist/marie.png';
-import fighter from '../../media/img/classes/Fighter/urien.png';
-import monk from '../../media/img/classes/Monk/karian.png';
-import paladin from '../../media/img/classes/Paladin/siegfried.png';
-import ranger from '../../media/img/classes/Ranger/rick.png';
-import sorcerer from '../../media/img/classes/Sorcerer/annabel.png';
-import wizard from '../../media/img/classes/Wizard/nyatar.png';
-import cavaleiro from '../../media/img/classes/Cavaleiro/carlos.png';
-import cavaleiroArcano from '../../media/img/classes/CavaleiroArcano/neroh.png';
-import shadowDancer from '../../media/img/classes/ShadowDancer/manami.png';
-import rdd from '../../media/img/classes/RDD/clarisse.png';
-import weaponMaster from '../../media/img/classes/WeaponMaster/jerick.png';
+import barbarian from '../../media/img/classes/Barbarian/tonelada.webp';
+import bard from '../../media/img/classes/Bard/orfeu.webp';
+import assassin from '../../media/img/classes/Assassin/mephistue.webp';
+import cleric from '../../media/img/classes/Cleric/image.webp';
+import duelist from '../../media/img/classes/Duelist/marie.webp';
+import fighter from '../../media/img/classes/Fighter/urien.webp';
+import monk from '../../media/img/classes/Monk/karian.webp';
+import paladin from '../../media/img/classes/Paladin/siegfried.webp';
+import ranger from '../../media/img/classes/Ranger/rick.webp';
+import sorcerer from '../../media/img/classes/Sorcerer/annabel.webp';
+import wizard from '../../media/img/classes/Wizard/nyatar.webp';
+import cavaleiro from '../../media/img/classes/Cavaleiro/carlos.webp';
+import cavaleiroArcano from '../../media/img/classes/CavaleiroArcano/neroh.webp';
+import shadowDancer from '../../media/img/classes/ShadowDancer/manami.webp';
+import rdd from '../../media/img/classes/RDD/clarisse.webp';
+import weaponMaster from '../../media/img/classes/WeaponMaster/jerick.webp';
 
 interface ClassImageEntry {
   src: string;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import nordockMap from '../../media/img/mapas/mundo/Nordock.jpg';
+import nordockMap from '../../media/img/mapas/mundo/Nordock.webp';
 import { Page } from '../../types';
 
 interface HeaderProps {
