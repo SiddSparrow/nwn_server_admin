@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import nordockMap from '../../media/img/mapas/mundo/Nordock.webp';
 import { Page } from '../../types';
+import { useAuth } from '../../contexts/AuthContext';
+import { LoginModal } from '../Login/LoginModal';
 
 interface HeaderProps {
   page: Page;
@@ -9,6 +11,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ page, onNavigate }) => {
   const [mapOpen, setMapOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
+  const { username, logout } = useAuth();
 
   return (
     <>
@@ -53,10 +57,32 @@ export const Header: React.FC<HeaderProps> = ({ page, onNavigate }) => {
                   Ambientação
                 </button>
               </li>
+              <li>
+                {username ? (
+                  <div className="flex items-center gap-2">
+                    <span className="text-white/60 text-xs hidden sm:inline">{username}</span>
+                    <button
+                      onClick={logout}
+                      className="text-white/80 hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium"
+                    >
+                      Sair
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setLoginOpen(true)}
+                    className="text-white/80 hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium"
+                  >
+                    Admin
+                  </button>
+                )}
+              </li>
             </ul>
           </nav>
         </div>
       </header>
+
+      {loginOpen && <LoginModal onClose={() => setLoginOpen(false)} />}
 
       {mapOpen && (
         <div

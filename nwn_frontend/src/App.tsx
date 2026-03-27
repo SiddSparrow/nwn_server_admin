@@ -8,12 +8,13 @@ import nordockMap from './media/img/mapas/mundo/Nordock.webp';
 import { Page } from './types';
 import { Skills } from './components/Skills/Skills';
 import { Feats } from './components/Feats/Feats';
+import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
   const [page, setPage] = useState<Page>('home');
 
   return (
-    <>
+    <AuthProvider>
       <link rel="preload" href={nordockMap} as="image" />
       <div className="relative min-h-screen">
         <div
@@ -33,7 +34,7 @@ function App() {
           </main>
         </div>
       </div>
-    </>
+    </AuthProvider>
   );
 }
 

@@ -8,6 +8,8 @@ import { AppService } from './app.service';
 import { CharsModule } from './chars/chars.module';
 import { PlayersModule } from './players/players.module';
 import { ServerManagerModule } from './server-manager/server-manager.module';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -29,6 +31,8 @@ import { ServerManagerModule } from './server-manager/server-manager.module';
     CharsModule,
     PlayersModule,
     ServerManagerModule,
+    AuthModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [

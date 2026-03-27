@@ -8,3 +8,13 @@ const api = axios.create({
 export function fetchOnlinePlayers(): Promise<Char[]> {
   return api.get<Char[]>('/chars/online/1').then((res) => res.data);
 }
+
+export function login(username: string, password: string): Promise<{ access_token: string }> {
+  return api.post<{ access_token: string }>('/auth/login', { username, password }).then((res) => res.data);
+}
+
+export function serverAction(action: 'start' | 'stop' | 'restart', token: string): Promise<unknown> {
+  return api
+    .post(`/server/${action}`, {}, { headers: { Authorization: `Bearer ${token}` } })
+    .then((res) => res.data);
+}

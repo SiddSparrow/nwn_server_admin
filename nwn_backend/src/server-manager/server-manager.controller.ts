@@ -1,6 +1,6 @@
 import { Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { ServerManagerService } from './server-manager.service';
-import { ApiKeyGuard } from '../common/guards/api-key.guard';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 
 @Controller('server')
 export class ServerManagerController {
@@ -12,19 +12,19 @@ export class ServerManagerController {
   }
 
   @Post('start')
-  @UseGuards(ApiKeyGuard)
+  @UseGuards(JwtAuthGuard)
   start() {
     return this.serverManagerService.start();
   }
 
   @Post('stop')
-  @UseGuards(ApiKeyGuard)
+  @UseGuards(JwtAuthGuard)
   stop() {
     return this.serverManagerService.stop();
   }
 
   @Post('restart')
-  @UseGuards(ApiKeyGuard)
+  @UseGuards(JwtAuthGuard)
   restart() {
     return this.serverManagerService.restart();
   }
