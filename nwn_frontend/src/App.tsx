@@ -6,6 +6,8 @@ import { Racas } from './components/Racas/Racas';
 import { Classes } from './components/Classes/Classes';
 import nordockMap from './media/img/mapas/mundo/Nordock.jpg';
 import { Page } from './types';
+import { Skills } from './components/Skills/Skills';
+import { Feats } from './components/Feats/Feats';
 
 function App() {
   const [page, setPage] = useState<Page>('home');
@@ -26,6 +28,8 @@ function App() {
             {page === 'regras' && <Regras onNavigate={setPage} />}
             {page === 'racas' && <Racas />}
             {page === 'classes' && <Classes />}
+            {page === 'skills' && <Skills />}
+            {page === 'feats' && <Feats />}
           </main>
         </div>
       </div>

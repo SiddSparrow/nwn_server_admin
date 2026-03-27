@@ -1,0 +1,242 @@
+{
+  "skills": [
+    {
+      "name": "Conhecimento: Arcano",
+      "description": "Substitui o Lore. Também utilizado para identificação de propriedades de itens.",
+      "isNew": false,
+      "isModified": true,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Arquitetura",
+      "description": "Perícia de conhecimento dedicada a estruturas, construções e engenharia.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Masmorras",
+      "description": "Perícia de conhecimento dedicada a masmorras, labirintos e estruturas subterrâneas.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Geografia",
+      "description": "Perícia de conhecimento dedicada a mapas, regiões e terrenos.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: História",
+      "description": "Perícia de conhecimento dedicada a eventos históricos e lore do mundo.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Local",
+      "description": "Perícia de conhecimento dedicada a informações sobre uma região ou cidade específica.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Natureza",
+      "description": "Perícia de conhecimento dedicada a flora, fauna e fenômenos naturais.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Nobreza",
+      "description": "Perícia de conhecimento dedicada a linhagens nobres, heráldica e política.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Religião",
+      "description": "Perícia de conhecimento dedicada a deuses, rituais e organizações religiosas.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Conhecimento: Planos",
+      "description": "Perícia de conhecimento dedicada aos planos de existência e suas criaturas.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Diplomacia",
+      "description": "Substitui Persuade. Utilizada para negociações, convencimento e relações sociais.",
+      "isNew": false,
+      "isModified": true,
+      "trained": false,
+      "notes": []
+    },
+    {
+      "name": "Prestidigitação",
+      "description": "Substitui Pick Pocket. Ampliada para cobrir uma gama maior de feitos em RP, incluindo truques, furtos discretos e manipulação de objetos.",
+      "isNew": false,
+      "isModified": true,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Acrobáticos",
+      "description": "Substitui Tumble. Unifica acrobacia e equilíbrio em uma única perícia.",
+      "isNew": false,
+      "isModified": true,
+      "trained": true,
+      "notes": [
+        "5+ graduações puras concedem +2 nos testes de Saltar."
+      ]
+    },
+    {
+      "name": "Falar Idiomas",
+      "description": "A cada 2 graduações investidas, o personagem desbloqueia um idioma adicional, resgatável no NPC da entrada. O servidor conta com 25 idiomas disponíveis.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": [
+        "Idiomas disponíveis: Abissal, Aglarondan, Animal, Bárbaro (tribo de Kabu), Celestial, Chondathan (Cormyr), Damaran, Dracônico, Drow, Anônico, Élfico, Gigante, Gnoll, Gnômico, Goblinoide, Halfling, Illuskan, Infernal, Mulhorandi, Farfelli, Orc, Rashemi, Sinais, Silvestre, Thayano.",
+        "Idiomas são relevantes fora do RP — certas informações do cenário só são reveladas para personagens que conheçam determinados idiomas."
+      ]
+    },
+    {
+      "name": "Atléticos",
+      "description": "Nova perícia que cobre natação, corrida, salto e escalada em uma única habilidade física.",
+      "isNew": true,
+      "isModified": false,
+      "trained": false,
+      "notes": []
+    },
+    {
+      "name": "Decifrar Escrita",
+      "description": "Permite ao personagem interpretar textos em idiomas desconhecidos, glifos, runas e manuscritos arcanos.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Disfarce",
+      "description": "Permite ao personagem alterar sua aparência para se passar por outra pessoa ou tipo de indivíduo.",
+      "isNew": true,
+      "isModified": false,
+      "trained": false,
+      "notes": []
+    },
+    {
+      "name": "Arte da Fuga",
+      "description": "Permite ao personagem escapar de amarras, correntes, grilhões e situações de restrição física.",
+      "isNew": true,
+      "isModified": false,
+      "trained": true,
+      "notes": []
+    },
+    {
+      "name": "Falsificação",
+      "description": "Permite ao personagem criar documentos, selos e assinaturas falsas.",
+      "isNew": true,
+      "isModified": false,
+      "trained": false,
+      "notes": []
+    },
+    {
+      "name": "Sentir Motivação",
+      "description": "Permite ao personagem detectar se está sendo enganado ou avaliar as intenções de um interlocutor.",
+      "isNew": true,
+      "isModified": false,
+      "trained": false,
+      "notes": []
+    },
+    {
+      "name": "Sobrevivência",
+      "description": "Utilizada para rastrear, encontrar comida e água, e navegar em ambientes hostis.",
+      "isNew": true,
+      "isModified": false,
+      "trained": false,
+      "notes": [
+        "Rangers, Bárbaros e Druidas ao entrar em uma área natural realizam um teste de Sobrevivência DC 20. Em caso de sucesso, o mapa da área é totalmente revelado."
+      ]
+    },
+    {
+      "name": "Usar Cordas",
+      "description": "Utilizada para amarrar cordas em buracos e pontos de descida. O resultado da rolagem determina a segurança da corda para quem descer depois.",
+      "isNew": true,
+      "isModified": false,
+      "trained": false,
+      "notes": [
+        "Resultado < 10: a corda pode arrebentar ao ser usada por outro personagem, causando dano de queda.",
+        "Resultado ≥ 10: a corda está segura.",
+        "Para recuperar a corda: estar no andar superior, portar uma adaga e clicar no objeto utilizável da corda.",
+        "Não é possível amarrar ou descer com itens nas mãos — ambas devem estar livres.",
+        "Corda de Seda concede +2 na rolagem.",
+        "5+ graduações puras em Usar Cordas concedem +2 nos testes de Escalada."
+      ]
+    },
+    {
+      "name": "Heal",
+      "description": "Ao utilizar Kit de Cura + Utensílios, o valor curado é 15 + modificador de Heal ao longo de 5 rodadas.",
+      "isNew": false,
+      "isModified": true,
+      "trained": false,
+      "notes": [
+        "Skill Focus: Heal soma metade do bônus adicional de Heal ao curar com o Kit de Cura."
+      ]
+    },
+    {
+      "name": "Parry",
+      "description": "Concede bônus de CA para combatentes de duas armas ou armas duplas: +1 de CA a cada 6 graduações.",
+      "isNew": false,
+      "isModified": true,
+      "trained": false,
+      "notes": []
+    },
+    {
+      "name": "Escalada",
+      "description": "Utilizada para escalar superfícies verticais. Possui sistema próprio de modificadores no servidor.",
+      "isNew": false,
+      "isModified": true,
+      "trained": false,
+      "notes": [
+        "Halflings: +2 racial.",
+        "Kit de Escalada: +2.",
+        "5+ graduações puras em Usar Cordas: +2.",
+        "Check Penalty de armadura é aplicada normalmente.",
+        "Todos os modificadores são cumulativos."
+      ]
+    },
+    {
+      "name": "Saltar",
+      "description": "Utilizada para realizar saltos em distância ou altura. Possui sistema próprio de modificadores no servidor.",
+      "isNew": false,
+      "isModified": true,
+      "trained": false,
+      "notes": [
+        "Raças de pernas curtas: −6.",
+        "Halflings: +2 racial.",
+        "Monge ou Bárbaro: +4 (velocidade aumentada).",
+        "5+ graduações puras em Acrobáticos: +2.",
+        "Sob efeito de Haste ou Expeditious Retreat: +10.",
+        "Check Penalty de armadura é aplicada normalmente.",
+        "Todos os modificadores são cumulativos."
+      ]
+    }
+  ]
+}

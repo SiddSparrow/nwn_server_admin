@@ -1,0 +1,193 @@
+{
+  "feats": [
+    {
+      "name": "Divine Shield e Divine Might",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "Duração aumentada em 4 vezes em relação ao padrão.",
+      "special": null,
+      "isNew": false,
+      "isModified": true
+    },
+    {
+      "name": "Proficiência em Escudo Torre",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "Permite ao personagem utilizar escudo torre.",
+      "special": "O Guerreiro já começa com este talento.",
+      "isNew": false,
+      "isModified": true
+    },
+    {
+      "name": "Skill Focus: Heal",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "O personagem soma metade do seu bônus adicional de Heal ao utilizar o Kit de Cura.",
+      "special": null,
+      "isNew": false,
+      "isModified": true
+    },
+    {
+      "name": "Spell Focus (Divination)",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "Dobra a duração do True Seeing.",
+      "special": null,
+      "isNew": false,
+      "isModified": true
+    },
+    {
+      "name": "Greater Spell Focus (Divination)",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "True Seeing passa a ter duração default (sem limite reduzido).",
+      "special": null,
+      "isNew": false,
+      "isModified": true
+    },
+    {
+      "name": "Spell Focus (Abjuration)",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "Shield passa a bloquear Isaac's Lesser Missile Storm. +2 no teste de Dispel Magic. Limite de Dispel aumentado.",
+      "special": null,
+      "isNew": false,
+      "isModified": true
+    },
+    {
+      "name": "Greater Spell Focus (Abjuration)",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "Shield passa a bloquear ambos os Isaac's Missile Storm. +4 no teste de Dispel Magic (substitui o bônus anterior). Limite de Dispel aumentado.",
+      "special": null,
+      "isNew": false,
+      "isModified": true
+    },
+    {
+      "name": "Tiro Aprimorado",
+      "category": "Geral",
+      "prerequisites": "Point Blank Shot, AB +1.",
+      "effect": "O personagem acrescenta 1/4 (mínimo 1) do modificador de Destreza ao dano de ataques com arco ou besta.",
+      "special": "Caso o personagem possua Zen Archery, utiliza Sabedoria no lugar de Destreza.",
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Tiro Aprimorado Maior",
+      "category": "Geral",
+      "prerequisites": "Tiro Aprimorado, AB +5.",
+      "effect": "O personagem acrescenta metade do modificador total de Destreza ao dano de ataques com arco ou besta.",
+      "special": "Caso o personagem possua Zen Archery, utiliza Sabedoria no lugar de Destreza.",
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Improved Parry",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "+1 de AC de Parry ao combater com duas armas ou armas duplas.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Especialização em Armadura",
+      "category": "Geral",
+      "prerequisites": "AB +10. Selecionar o tipo de armadura.",
+      "effect": "O personagem recebe DR 2/– enquanto estiver equipando aquela armadura.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Especialização em Escudo",
+      "category": "Geral",
+      "prerequisites": "Estar usando o escudo em questão. Selecionar o tipo.",
+      "effect": "O personagem recebe +1 na CA enquanto estiver com o escudo equipado. Soma o bônus do escudo nos testes de Reflex contra magias.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Arremesso Brutal",
+      "category": "Geral",
+      "prerequisites": null,
+      "effect": "Ao equipar uma arma de arremesso, o personagem utiliza seu bônus de Força no lugar de Destreza para o arremesso.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Magia das Sombras",
+      "category": "Geral",
+      "prerequisites": "Sabedoria 14+, 4 graduações em Conhecimento: Arcano e em Conhecimento: Religião.",
+      "effect": "O personagem utiliza a trama das sombras ao invés da trama original, podendo conjurar normalmente em áreas de magia selvagem e magia morta. Recebe +2 caster levels para magias de Darkness e das escolas de Necromancia, Ilusão e Encantamento. Recebe −2 caster levels para magias de Evocação e Transmutação. O caster level influencia duração, dano e elementos adicionais (ex.: número de mísseis para Mísseis Mágicos e Flame Arrow).",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Fúria Aterrorizadora",
+      "category": "Fúria",
+      "prerequisites": "Bárbaro nível 4+.",
+      "effect": "Ao entrar em Rage, causa efeito de amedrontamento em todos os inimigos ao redor com menos HD do que ele, caso não resistam a um teste de Vontade (DC = 10 + max(½ Nível + Carisma, ½ Intimidate total)). Os que falharem recebem −2 em ataque, dano e saves enquanto a Rage durar.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Fúria da Movimentação",
+      "category": "Fúria",
+      "prerequisites": "Bárbaro nível 6+.",
+      "effect": "Ao entrar em Rage, o bárbaro fica imune a qualquer efeito de paralisia ou similar e tem sua velocidade aumentada em 50%.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Fúria de Pedra",
+      "category": "Fúria",
+      "prerequisites": "Bárbaro nível 5+.",
+      "effect": "Ao entrar em Rage, o bárbaro recebe DR igual ao modificador de Constituição/+5, podendo reduzir até um máximo de 10 × modificador de Constituição de pontos de dano.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Fúria Vigorosa",
+      "category": "Fúria",
+      "prerequisites": "Bárbaro nível 8+, Constituição 16+.",
+      "effect": "Ao entrar em Rage, o bárbaro regenera pontos de vida igual ao modificador de Constituição ÷ 2 por round, enquanto a Rage durar.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Fúria Antimagia",
+      "category": "Fúria",
+      "prerequisites": "Bárbaro nível 10+.",
+      "effect": "Ao entrar em Rage, o bárbaro recebe Spell Resistance igual a Nível de Bárbaro + modificador de Constituição.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Fúria Imparável",
+      "category": "Fúria",
+      "prerequisites": "Bárbaro nível 10+.",
+      "effect": "Ao entrar em Rage, o bárbaro fica totalmente imune a qualquer efeito mágico mental até o fim da Rage.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    },
+    {
+      "name": "Fúria do Ataque Extra",
+      "category": "Fúria",
+      "prerequisites": "Bárbaro nível 12+.",
+      "effect": "Ao entrar em Rage, o bárbaro ganha um ataque extra por round com o maior AB.",
+      "special": null,
+      "isNew": true,
+      "isModified": false
+    }
+  ]
+}

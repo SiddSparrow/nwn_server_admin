@@ -49,6 +49,14 @@ export const Header: React.FC<HeaderProps> = ({ page, onNavigate }) => {
                 </button>
               </li>
               <li>
+                <button
+                  onClick={() => onNavigate('feats')}
+                  className={`hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium ${page === 'feats' ? 'text-white' : 'text-white/80'}`}
+                >
+                  Talentos
+                </button>
+              </li>
+              <li>
                 <button className="text-white/80 hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium">
                   Ambientação
                 </button>

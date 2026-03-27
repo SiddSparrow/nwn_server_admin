@@ -7,9 +7,9 @@ interface RegrasProps {
 
 const modificacoes: { label: string; page?: Page }[] = [
   { label: 'Classes', page: 'classes' },
-  { label: 'Feats' },
+  { label: 'Feats' , page: 'feats'},
   { label: 'Raças', page: 'racas' },
-  { label: 'Skills' },
+  { label: 'Skills', page: 'skills' },
   { label: 'Magias' },
 ];
 const sistemas = ['Quests Automáticas', 'Morte', 'Eventos Aleatórios', 'CNR'];
