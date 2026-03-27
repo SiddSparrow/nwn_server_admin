@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
-import nordockMap from '../../media/Nordock.jpg';
+import nordockMap from '../../media/img/mapas/mundo/Nordock.jpg';
+import { Page } from '../../types';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  page: Page;
+  onNavigate: (page: Page) => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ page, onNavigate }) => {
   const [mapOpen, setMapOpen] = useState(false);
 
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-lg">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-          <h1 className="text-xl sm:text-2xl font-bold text-white tracking-wide font-serif">
+          <button
+            onClick={() => onNavigate('home')}
+            className="text-xl sm:text-2xl font-bold text-white tracking-wide font-serif hover:text-white/80 transition-colors duration-200"
+          >
             Terra RP
-          </h1>
+          </button>
           <nav>
             <ul className="flex gap-4 sm:gap-6">
               <li>
@@ -32,8 +41,16 @@ export const Header: React.FC = () => {
                 </button>
               </li>
               <li>
-                <button className="text-white/80 hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium">
+                <button
+                  onClick={() => onNavigate('regras')}
+                  className={`hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium ${page === 'regras' ? 'text-white' : 'text-white/80'}`}
+                >
                   Regras
+                </button>
+              </li>
+              <li>
+                <button className="text-white/80 hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium">
+                  Ambientação
                 </button>
               </li>
             </ul>

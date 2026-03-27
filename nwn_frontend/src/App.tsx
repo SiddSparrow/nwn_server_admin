@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Header } from './components/Header/Header';
 import { PlayerList } from './components/PlayerList/PlayerList';
-import nordockMap from './media/Nordock.jpg';
+import { Regras } from './components/Regras/Regras';
+import { Racas } from './components/Racas/Racas';
+import { Classes } from './components/Classes/Classes';
+import nordockMap from './media/img/mapas/mundo/Nordock.jpg';
+import { Page } from './types';
 
 function App() {
+  const [page, setPage] = useState<Page>('home');
+
   return (
     <>
       <link rel="preload" href={nordockMap} as="image" />
@@ -14,9 +20,12 @@ function App() {
         />
         <div className="fixed inset-0 bg-black/50" />
         <div className="relative z-10">
-          <Header />
+          <Header page={page} onNavigate={setPage} />
           <main className="flex flex-col items-center pt-28 px-6">
-            <PlayerList />
+            {page === 'home' && <PlayerList />}
+            {page === 'regras' && <Regras onNavigate={setPage} />}
+            {page === 'racas' && <Racas />}
+            {page === 'classes' && <Classes />}
           </main>
         </div>
       </div>

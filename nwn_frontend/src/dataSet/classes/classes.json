@@ -1,0 +1,728 @@
+{
+  "classes": [
+    {
+      "type": "base",
+      "name": "Bárbaro",
+      "description": "Nas fronteiras de Nordock, onde a lei dos reinos não alcança e a sobrevivência é a única religião reconhecida, os bárbaros são a força da natureza em forma humana. Não são selvagens sem propósito — são guerreiros temperados pela adversidade, cuja fúria não é fraqueza, mas sim uma arma afiada por gerações de luta.",
+      "hitDice": "d12",
+      "skillPoints": 6,
+      "saves": ["Fortitude"],
+      "ab": "Fighter",
+      "classSkills": ["Listen", "Parry", "Taunt", "Intimidate", "Ride", "Atléticos", "Sobrevivência"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Redução de Dano",
+          "description": "O bárbaro recebe Redução de Dano nos níveis 7, 10, 13 e 16.",
+          "table": null
+        },
+        {
+          "name": "Feats de Rage",
+          "description": "Nos níveis 6, 12 e 18 o bárbaro recebe um feat bônus que aprimora sua Fúria Bárbara. O jogador poderá escolher um feat da lista de rage disponível no servidor.",
+          "table": null
+        },
+        {
+          "name": "Fúria Bárbara (Barbarian Rage)",
+          "description": "A Fúria Bárbara é a habilidade central do bárbaro. Todo dano de atributo é do tipo Contusão. Duração: 10 + Nível de Bárbaro + Modificador de Constituição em rounds.",
+          "table": {
+            "headers": ["Intervalo de Nível", "Bônus Concedidos"],
+            "rows": [
+              ["Nível 1 – 10", "+2 Ataque, +2 Dano (Contusão), +2 Will, +2 Fortitude, +2 Discipline, +2 HP temp./nível"],
+              ["Nível 11 – 19", "+3 Ataque, +3 Dano (Contusão), +3 Will, +3 Fortitude, +3 Discipline, +3 HP temp./nível"],
+              ["Nível 20+", "+4 Ataque, +4 Dano (Contusão), +4 Will, +4 Fortitude, +4 Discipline, +4 HP temp./nível"]
+            ]
+          }
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Bardo",
+      "description": "Em Nordock, o bardo é muito mais do que um simples animador de tavernas. É o guardião da memória coletiva, o espião nas sombras dos salões nobres e o catalisador que transforma um grupo de aventureiros em algo maior do que a soma de suas partes. Sua voz é uma arma; seu conhecimento, um arsenal.",
+      "hitDice": "d6",
+      "skillPoints": 8,
+      "saves": ["Will", "Reflex"],
+      "ab": "Rogue",
+      "classSkills": ["Concentration", "Hide", "Listen", "Conhecimento (todos)", "Move Silently", "Parry", "Perform", "Diplomacia", "Prestidigitação", "Spellcraft", "Taunt", "Use Magic Device", "Appraise", "Acrobáticos", "Bluff", "Falar Idiomas", "Atléticos", "Decifrar Escrita", "Disfarce", "Arte da Fuga", "Sentir Motivação"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Sem Spellfailure",
+          "description": "O bardo não sofre penalidade de falha arcana ao usar armadura leve.",
+          "table": null
+        },
+        {
+          "name": "Conhecimento de Bardo",
+          "description": "O bardo recebe bônus em todas as perícias de conhecimento igual a Nível de Bardo ÷ 2. Para o bônus ser funcional, é necessário ter pelo menos 1 ponto investido em cada conhecimento.",
+          "table": null
+        },
+        {
+          "name": "Bard Song e Curse Song",
+          "description": "A Bard Song concede bônus progressivos a todos os aliados ao redor (inclusive ao próprio bardo). A Curse Song utiliza os mesmos valores invertidos — tudo o que a Song concede como bônus, a Curse aplica como penalidade ou dano.",
+          "table": {
+            "headers": ["Nível", "Perform", "Ataque", "Dano", "HP", "AC", "Skills", "Saves", "Velocidade"],
+            "rows": [
+              ["1",  "2",  "1", "1", "2",  "0", "1", "0", "5%"],
+              ["2",  "3",  "1", "1", "4",  "0", "1", "0", "5%"],
+              ["3",  "5",  "1", "1", "6",  "1", "1", "1", "5%"],
+              ["4",  "6",  "1", "2", "8",  "1", "1", "1", "5%"],
+              ["5",  "8",  "2", "2", "10", "1", "2", "1", "5%"],
+              ["6",  "9",  "2", "2", "12", "1", "2", "1", "10%"],
+              ["7",  "11", "2", "2", "14", "2", "2", "2", "10%"],
+              ["8",  "12", "2", "2", "16", "2", "2", "2", "10%"],
+              ["9",  "14", "2", "3", "18", "2", "2", "2", "10%"],
+              ["10", "15", "3", "3", "20", "2", "3", "2", "10%"],
+              ["11", "17", "3", "3", "22", "3", "3", "3", "15%"],
+              ["12", "18", "3", "3", "24", "3", "3", "3", "15%"],
+              ["13", "20", "3", "3", "26", "3", "3", "3", "15%"],
+              ["14", "21", "3", "4", "28", "3", "3", "3", "15%"],
+              ["15", "23", "4", "4", "30", "4", "4", "4", "20%"],
+              ["16", "24", "4", "4", "32", "4", "4", "4", "20%"],
+              ["17", "26", "4", "4", "34", "4", "4", "4", "20%"],
+              ["18", "27", "4", "4", "36", "4", "4", "4", "20%"],
+              ["19", "29", "4", "5", "38", "4", "4", "4", "20%"],
+              ["20", "30", "5", "5", "40", "5", "5", "5", "20%"]
+            ]
+          }
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Bruxo",
+      "description": "Nem todo poder mágico nasce de anos de estudo ou de uma centelha divina — alguns são comprados. O bruxo é aquele que fechou um acordo com algo mais antigo, mais vasto e mais indiferente do que qualquer deus. Sua magia não foi conquistada; foi concedida. E toda concessão tem um preço.",
+      "hitDice": "d6",
+      "skillPoints": 4,
+      "saves": ["Reflex", "Will"],
+      "ab": "Rogue",
+      "classSkills": ["Concentração", "Conhecimento Arcano", "Conhecimento: Religião", "Conhecimento: Planos", "Parry", "Persuade", "Spellcraft", "Use Magic Device", "Bluff", "Intimidate", "Decifrar Escrita", "Disfarce", "Sentir Motivação"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Magia Arcana",
+          "description": "O bruxo conjura por lista própria baseada em Carisma, sem necessidade de memorização (assim como o Sorcerer e o Bardo).",
+          "table": null
+        },
+        {
+          "name": "Rajada Mística",
+          "description": "Ranged touch attack ilimitado (at will) que causa (Nível de Bruxo + 1) ÷ 2 dados de d6 de dano mágico.",
+          "table": null
+        },
+        {
+          "name": "Pacto (Nível 1)",
+          "description": "O bruxo escolhe um pacto que define sua identidade e concede bênçãos progressivas nos níveis 3 e 10.",
+          "table": {
+            "headers": ["Pacto", "Bênção Menor (Nív. 3)", "Bênção Maior (Nív. 10)"],
+            "rows": [
+              ["Grande Ancião", "Infravision permanente", "Ver o Invisível permanente"],
+              ["Demoníaco", "DR 10/Elétrico", "Imunidade 50% ao Frio"],
+              ["Celestial", "DR 10/Fogo", "SR 5 + Nível de Bruxo"],
+              ["Shadowfell", "Infravision", "Conceal 15% permanente"],
+              ["Mortos", "DR Slashing = mod. Carisma ÷ 2", "Imunidade 50% Negative"]
+            ]
+          }
+        }
+      ],
+      "spellList": {
+        "circle1": ["Darkness", "See Invisibility", "Sussurros de Outro Mundo", "Visão Demoníaca", "Inflict Light Wounds", "Cure Light Wounds", "Doom", "Mage Armor"],
+        "circle2": ["Cat's Grace", "Bull's Strength", "Blur", "Darkfire", "Eagle's Splendor", "Hold Person", "Fear", "Combust", "Invisibility", "Slow", "Fireball", "Wounding Whisper"],
+        "circle3": ["Dispel Magic", "Confusion", "Displacement", "Evard's Black Tentacles", "Ice Storm", "Haste", "Improved Invisibility", "Dismissal", "Ethereal Visage", "Destruction"],
+        "circle4": ["Banishment", "Finger of Death", "Planar Binding", "Shadow Shield", "True Seeing", "Mass Haste"]
+      },
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Clérigo",
+      "description": "O clérigo não é simplesmente um sacerdote que aprendeu a lutar — é o braço armado de seu deus no plano material. Em Nordock, onde as fronteiras entre planos são tênues e os mortos-vivos uma realidade cotidiana, o clérigo é frequentemente a diferença entre uma comunidade que sobrevive e uma que é consumida pela escuridão.",
+      "hitDice": "d8",
+      "skillPoints": 4,
+      "saves": ["Fortitude", "Will"],
+      "ab": "Cleric",
+      "classSkills": ["Concentration", "Heal", "Conhecimento: Arcano", "Conhecimento: História", "Conhecimento: Planos", "Conhecimento: Religião", "Parry", "Diplomacia", "Spellcraft"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Turn Undead Modificado",
+          "description": "Causa 1d10 por nível ímpar do clérigo em área a todos os mortos-vivos. Clériigos Evil curam os mortos-vivos com o mesmo valor. O morto-vivo deve realizar um teste de Vontade (DC = 10 + Nível de Clérigo + Nível de Paladino + Nível de Blackguard). Em caso de sucesso, o dano é reduzido à metade. O Sun Domain aumenta o dano em 50% e a DC em 2. Exemplo: clérigo Good sem Sun Domain de nível 15 terá DC 25 e causará 6d10 de dano.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Druida",
+      "description": "Para o druida, a natureza não é um cenário — é uma entidade viva que respira, reage e exige respeito. Eles não servem a deuses do panteão comum, mas à força primordial que sustenta toda vida. Em Nordock, onde a civilização e o caos da magia planar ameaçam constantemente o equilíbrio natural, os druidas são guardiões silenciosos de algo que o mundo frequentemente esquece que precisa.",
+      "hitDice": "d8",
+      "skillPoints": 6,
+      "saves": ["Fortitude", "Will"],
+      "ab": "Cleric",
+      "classSkills": ["Animal Empathy", "Concentration", "Heal", "Parry", "Diplomacia", "Spellcraft", "Ride", "Atléticos", "Conhecimento: Natureza", "Sobrevivência"],
+      "image": "",
+      "abilities": [],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Duelista",
+      "description": "Enquanto o guerreiro confia na armadura e o bárbaro na fúria, o duelista confia em algo mais escasso e mais difícil de treinar: talento. São figuras de elegância perigosa — cada movimento calculado, cada passo uma dança entre vida e morte. Não é a força que os define, mas a graça com que a empregam.",
+      "hitDice": "d8",
+      "skillPoints": 6,
+      "saves": ["Reflex"],
+      "ab": "Fighter (1 por nível)",
+      "classSkills": ["Listen", "Parry", "Diplomacia", "Pick Pocket", "Spot", "Taunt", "Acrobáticos", "Bluff", "Intimidate", "Perform", "Atléticos", "Arte da Fuga", "Conhecimento: Local", "Conhecimento: Nobreza", "Sentir Motivação", "Discipline"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Sortudo (2º nível, 3×/dia)",
+          "description": "Ao ativar Sortudo, o duelista adiciona seu modificador de Carisma em todas as Saves pelo mesmo número de rounds igual ao seu Carisma.",
+          "table": null
+        },
+        {
+          "name": "AC de Duelista",
+          "description": "Bônus progressivo na CA enquanto o duelista estiver usando armadura leve ou sem armadura.",
+          "table": null
+        },
+        {
+          "name": "Treino com Armas",
+          "description": "Bônus progressivo no dano enquanto estiver empunhando uma arma leve ou perfurante de uma mão (adaga, espada curta, rapier, lança curta) com a mão não-hábil livre ou com um Buckler.",
+          "table": null
+        },
+        {
+          "name": "Desenvoltura",
+          "description": "O duelista recebe pontos de Desenvoltura iguais ao seu modificador de Carisma a cada descanso, e ganha 1 ponto ao matar um inimigo com uma arma de Treino. O total nunca pode exceder o modificador atual de Carisma. Cada ponto pode ser gasto para: (1) Bônus de skill em Acrobacia, Arte da Fuga e Atletismo = 1d6 (rolável) por CHA rounds. (2) Bônus na CA = CHA por CHA rounds. (3) 1 ataque extra a cada 6 níveis por 2 rounds — desativa Expertise e causa −2 CA.",
+          "table": null
+        },
+        {
+          "name": "Ataque Preciso (3º nível)",
+          "description": "Enquanto possuir ao menos 1 ponto de Desenvoltura e estiver enquadrado no Treino de Armas, o duelista causa +1d6 de dano adicional em cada golpe.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": {
+        "headers": ["Nível", "Habilidade"],
+        "rows": [
+          ["1",  "Weapon Finesse, Desenvoltura"],
+          ["2",  "Sortudo (3×/dia)"],
+          ["3",  "AC +1, Ataque Preciso"],
+          ["4",  "Feat Bônus (lista de Fighter)"],
+          ["5",  "Treino com Armas +1"],
+          ["9",  "Feat Bônus (lista de Fighter)"],
+          ["10", "AC +2"],
+          ["11", "Treino com Armas +2"],
+          ["13", "Uncanny Dodge"],
+          ["14", "Feat Bônus (lista de Fighter)"],
+          ["15", "AC +3"],
+          ["17", "Treino com Armas +3"],
+          ["19", "Feat Bônus (lista de Fighter)"],
+          ["20", "Um abraço e um tapinha nas costas"]
+        ]
+      }
+    },
+    {
+      "type": "base",
+      "name": "Guerreiro",
+      "description": "O guerreiro não precisa de magia, de pactos ou de favores divinos — ele tem treino, disciplina e a convicção de que com a técnica certa, qualquer obstáculo pode ser derrubado. Em um mundo onde feiticeiros rasgam o tecido da realidade e criaturas planares vagam pelas ruas de Hollows, o guerreiro é o lembrete de que o aço ainda resolve.",
+      "hitDice": "d10",
+      "skillPoints": 4,
+      "saves": ["Fortitude"],
+      "ab": "Fighter (máximo)",
+      "classSkills": ["Concentration", "Parry", "Intimidate", "Ride", "Atléticos", "Taunt"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Bravura",
+          "description": "O guerreiro recebe bônus de Vontade contra Medo igual a Nível de Guerreiro ÷ 3 (arredondado para baixo).",
+          "table": null
+        },
+        {
+          "name": "Proficiência com Escudo Torre",
+          "description": "O guerreiro é a única classe base que começa com proficiência em escudo torre.",
+          "table": null
+        },
+        {
+          "name": "AB Adicional",
+          "description": "O guerreiro recebe +1 de AB a cada 6 níveis.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Monge",
+      "description": "Os monges de Nordock não são simplesmente lutadores disciplinados — são praticantes de uma filosofia onde o corpo é o instrumento e a mente, o maestro. Cada golpe é a expressão de anos de meditação; cada postura de combate, um diálogo com forças que poucos compreendem. Encontrar um monge de alto nível em campo aberto é encontrar um fenômeno natural com punhos.",
+      "hitDice": "d10",
+      "skillPoints": 6,
+      "saves": ["Fortitude", "Reflex", "Will"],
+      "ab": "Fighter",
+      "classSkills": ["Concentration", "Conhecimento: Arcano", "Conhecimento: Religioso", "Hide", "Listen", "Move Silently", "Parry", "Diplomacia", "Acrobáticos", "Atléticos", "Arte da Fuga", "Sentir Motivação"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Estilos de Combate (a partir do 4º nível)",
+          "description": "O monge pode utilizar técnicas de combate desarmado que concedem habilidades distintas. Os efeitos são ativos somente enquanto o monge estiver desarmado. Todos os bônus escalam com Nível de Monge ÷ 4.",
+          "table": {
+            "headers": ["Estilo", "Efeito"],
+            "rows": [
+              ["Tigre", "Bônus de AB = Nível de Monge ÷ 4"],
+              ["Sol",   "Bônus de AC (esquiva) = Nível de Monge ÷ 4"],
+              ["Dragão","DR (+5) = Nível de Monge ÷ 4"],
+              ["Urso",  "Bônus de Dano (Contusão) = Nível de Monge ÷ 4"]
+            ]
+          }
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Paladino",
+      "description": "O paladino não é apenas um guerreiro que reza — é uma convicção que aprendeu a lutar. Cada golpe é um ato de fé; cada cura, uma prece respondida. Em Nordock, onde o mal tem rosto e endereço, o paladino é a resposta direta: visível, inabalável e implacável.",
+      "hitDice": "d10",
+      "skillPoints": 4,
+      "saves": ["Fortitude", "Will"],
+      "ab": "Fighter",
+      "classSkills": ["Concentration", "Heal", "Parry", "Diplomacia", "Taunt", "Ride", "Conhecimento: Nobreza", "Conhecimento: Religião", "Sentir Motivação"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Lay on Hands (3×/dia)",
+          "description": "Cura 1d6 a cada 2 níveis de Paladino/CoT (mínimo 1d6). A partir do nível 6 adiciona Lesser Restoration; do nível 9, Remove Curse; do nível 12, Stone to Flesh. Todos os efeitos são acumulativos.",
+          "table": null
+        },
+        {
+          "name": "Smite Evil",
+          "description": "Aumentado para 3 usos por dia. Extra Smiting concedido no nível 10.",
+          "table": null
+        },
+        {
+          "name": "Detectar o Mal",
+          "description": "Disponível desde o nível 1, ilimitado (at will).",
+          "table": null
+        },
+        {
+          "name": "Arma Divina (1×/dia)",
+          "description": "Substitui Summon Mount. Duração: Nível de Paladino + Carisma em Turnos. Requer empunhar uma arma. Os bônus acumulam com Divine Might e Smite Evil. Base: +1d6 de dano divino contra alvos Evil. Nível 10+: Dispel on Hit com bônus = Nível de Paladino. Nível 12+ (níveis pares, cap 20): SR igual ao nível do paladino.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Ranger",
+      "description": "O ranger de Nordock não é o caçador solitário da floresta da imaginação popular — é um especialista em sobrevivência que aprendeu a ler o mundo de uma forma que a maioria das pessoas simplesmente não consegue enxergar. Seja nas florestas fechadas perto de Thyatis, nas planícies áridas ao redor de Kabu ou nos subterrâneos sombrios de Nordock, o ranger está sempre em casa — e seu inimigo, sempre em desvantagem.",
+      "hitDice": "d8",
+      "skillPoints": 8,
+      "saves": ["Fortitude", "Reflex"],
+      "ab": "Fighter",
+      "classSkills": ["Animal Empathy", "Concentration", "Heal", "Hide", "Listen", "Move Silently", "Parry", "Search", "Set Trap", "Spot", "Ride", "Atléticos", "Conhecimento: Geografia", "Conhecimento: Masmorra", "Conhecimento: Natureza", "Sobrevivência", "Acrobáticos", "Usar Cordas", "Desarmar Armadilhas"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Terreno Favorecido",
+          "description": "A cada 4 níveis, o ranger recebe um talento (em forma de item) representando um terreno onde é especialista. Bônus: +2 em Spot, Listen, Hide, Move Silently, Sobrevivência e Conhecimento: Geografia (requer ao menos 1 rank), além de +10% de velocidade. Com nível 11+ de Ranger, todos os bônus dobram. Terrenos disponíveis: Neve, Floresta, Caverna, Urbano, Deserto, Planície, Pântano, Montanha, Masmorra.",
+          "table": null
+        },
+        {
+          "name": "Maestria com Duas Armas",
+          "description": "No nível 9, o ranger perde a penalidade de −2/−2 no combate com duas armas. No nível 15, recebe +1 de AB em cada ataque usando duas armas.",
+          "table": null
+        },
+        {
+          "name": "Defesa com Duas Armas",
+          "description": "No nível 5, o ranger recebe +1 de CA enquanto usar duas armas ou uma arma dupla. Esse bônus aumenta em +1 nos níveis 10 e 15 (máximo +3).",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": {
+        "headers": ["Nível", "Habilidade"],
+        "rows": [
+          ["1",  "Ferramenta de Rastreio"],
+          ["3",  "Trackless Step"],
+          ["5",  "Defesa com Duas Armas +1"],
+          ["6",  "Woodland Stride"],
+          ["8",  "Uncanny Dodge I"],
+          ["9",  "Evasion, Maestria com Duas Armas (sem penalidade −2/−2)"],
+          ["10", "Defesa com Duas Armas +2"],
+          ["11", "Terrenos Favorecidos dobram bônus"],
+          ["15", "Maestria com Duas Armas (+1 AB em cada ataque duplo), Defesa com Duas Armas +3"],
+          ["17", "Hide in Plain Sight (HIPS)"],
+          ["20", "Bane of Enemies"]
+        ]
+      }
+    },
+    {
+      "type": "base",
+      "name": "Ladino",
+      "description": "Em Nordock, o ladino é a prova viva de que informação vale mais do que força bruta — e de que a pessoa mais perigosa em uma sala nem sempre é a mais visível. São mestres da adaptação: batedores de carteira em Tobaro, agentes duplos em Hollows, assassinos contratados em Kabu. O que os une não é o crime, mas a capacidade de ver oportunidades onde outros veem obstáculos.",
+      "hitDice": "d6",
+      "skillPoints": 10,
+      "saves": ["Reflex"],
+      "ab": "Rogue",
+      "classSkills": ["Disable Trap", "Hide", "Listen", "Move Silently", "Open Locks", "Parry", "Diplomacia", "Prestidigitação", "Search", "Set Trap", "Spot", "Use Magic Device", "Appraise", "Acrobáticos", "Bluff", "Intimidate", "Perform", "Atléticos", "Decifrar Escrita", "Disfarce", "Arte da Fuga", "Falsificação", "Conhecimento: Local", "Sentir Motivação", "Usar Cordas"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Feats Bônus",
+          "description": "Todo nível par a partir do 4º, o ladino recebe um feat bônus (Skill Focus ou Weapon Finesse).",
+          "table": null
+        },
+        {
+          "name": "Furtividade Rápida (a partir do 8º nível)",
+          "description": "O ladino ganha +10% de velocidade ao entrar em modo stealth. Aumenta em +5% nos níveis 12, 16 e 20 (máximo +25%).",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Sorcerer",
+      "description": "Se o mago é a ciência da magia, o sorcerer é o instinto dela. Não precisam de grimórios nem de rituais de memorização — a magia simplesmente flui por eles como sangue, como respiração. Em Nordock, onde a presença da Fenda Planar torna o tecido mágico mais instável e imprevisível, os sorcerers são tanto uma bênção quanto um perigo.",
+      "hitDice": "d6",
+      "skillPoints": 4,
+      "saves": ["Will"],
+      "ab": "Mago",
+      "classSkills": ["Concentração", "Conhecimento: Arcano", "Conhecimento: Local", "Bluff", "Spellcraft"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Feats Bônus",
+          "description": "O Sorcerer recebe feats bônus (como o Mago) nos níveis 6, 12 e 18.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "base",
+      "name": "Wizard",
+      "description": "O mago de Nordock passou anos — às vezes décadas — perseguindo algo que a maioria das pessoas nunca chega a compreender: o padrão por trás da realidade. Cada magia é uma equação; cada feitiço lançado, uma demonstração de que o mundo pode ser reescrito por quem souber a linguagem certa.",
+      "hitDice": "d4",
+      "skillPoints": 4,
+      "saves": ["Will"],
+      "ab": "Mago",
+      "classSkills": ["Concentration", "Conhecimento (todos)", "Spellcraft", "Decifrar Escrita"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Especialização de Escola",
+          "description": "Magos que se especializam em uma escola recebem +2 de bônus nas jogadas de Spell Resistance (sem contar feats de Spell Penetration), exclusivamente ao conjurar magias da escola de especialização.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Agente",
+      "description": "Agentes não são simplesmente espiões — são artistas da identidade. Transitam entre nobrezas e subterrâneos com a mesma facilidade, sempre sorrindo, sempre observando, sempre três passos à frente. Sua lealdade é questionável; sua utilidade, indiscutível.",
+      "hitDice": "d6",
+      "skillPoints": 6,
+      "saves": ["Reflex", "Will"],
+      "ab": "Rogue",
+      "classSkills": ["Disable Trap", "Hide", "Listen", "Move Silently", "Open Locks", "Parry", "Diplomacia", "Prestidigitação", "Search", "Set Trap", "Spot", "Use Magic Device", "Appraise", "Acrobáticos", "Bluff", "Intimidate", "Perform", "Atléticos", "Decifrar Escrita", "Disfarce", "Arte da Fuga", "Falsificação", "Conhecimento: Local", "Conhecimento: Religião", "Sentir Motivação", "Usar Cordas"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Conhecimento de Agente",
+          "description": "Adiciona o nível do Agente em todas as perícias de conhecimento (requer ao menos 1 rank). Acumula com o Conhecimento de Bardo.",
+          "table": null
+        },
+        {
+          "name": "Astúcia Divina (2º nível)",
+          "description": "O Agente recebe +2 passivo vs armadilhas.",
+          "table": null
+        },
+        {
+          "name": "Death Attack (2º e 4º nível)",
+          "description": "O agente recebe Death Attack em todo nível par. DC: sempre 11 + Inteligência (limitação da engine). 2º nível: 1d6. 4º nível: 2d6.",
+          "table": null
+        },
+        {
+          "name": "Sorte Divina (3º nível, 1×/dia)",
+          "description": "Bônus de (Modificador de Carisma + Nível de Agente) em todas as skills e saves, por um número de turnos igual ao bônus concedido.",
+          "table": null
+        },
+        {
+          "name": "Mente Focada (4º nível)",
+          "description": "+2 passivo em todas as rolagens vs efeitos mentais.",
+          "table": null
+        },
+        {
+          "name": "Olhos da Verdade (5º nível, 1×/dia)",
+          "description": "Benefícios de visão da verdade como Greater Divination Focus por um número de turnos igual ao nível de Agente.",
+          "table": null
+        },
+        {
+          "name": "Feats Bônus (3º e 5º nível)",
+          "description": "O agente pode selecionar qualquer Skill Focus como feat bônus.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": {
+        "headers": ["Nível", "Habilidade"],
+        "rows": [
+          ["1", "Conhecimento de Agente, Magia Divina (baseada em Carisma)"],
+          ["2", "Astúcia Divina (+2 vs armadilhas), Death Attack 1d6"],
+          ["3", "Sorte Divina (1×/dia), Feat Bônus (Skill Focus)"],
+          ["4", "Mente Focada (+2 vs efeitos mentais), Death Attack 2d6"],
+          ["5", "Olhos da Verdade (1×/dia), Feat Bônus (Skill Focus)"]
+        ]
+      }
+    },
+    {
+      "type": "prestígio",
+      "name": "Blackguard",
+      "description": "Se o paladino é a fé com espada, o Blackguard é a corrupção com armadura. Não servem a um deus — servem à escuridão em si. Cada toque é uma maldição; cada vitória, um tributo pago às forças que os sustentam. Encontrá-los em campo é encontrar algo que foi feito para matar e que disfruta muito do trabalho.",
+      "hitDice": "d10",
+      "skillPoints": 2,
+      "saves": ["Fortitude"],
+      "ab": "Fighter",
+      "classSkills": ["Concentration", "Heal", "Hide", "Intimidate", "Move Silently", "Parry", "Conhecimento: Religião"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Toque da Dor (3×/dia a partir do nível 2)",
+          "description": "Ataque de toque corpo a corpo. Dano base: 1d6 × (Nível de BG ÷ 2) + Carisma. Efeitos adicionais acumulativos com duração de 1 round por nível de BG.",
+          "table": {
+            "headers": ["Nível de BG", "Efeito Adicional"],
+            "rows": [
+              ["4",  "O alvo fica Amedrontado."],
+              ["6",  "O Blackguard se cura com o mesmo valor do dano causado."],
+              ["8",  "O alvo recebe penalidade em todos os atributos igual ao modificador de Carisma do BG."],
+              ["10", "O alvo fica Atordoado."]
+            ]
+          }
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Caçador Especialista",
+      "description": "Alguns monstros são difíceis demais, rápidos demais ou inteligentes demais para serem enfrentados com força bruta. O Caçador Especialista é a resposta a esse problema: um profissional que estudou seus alvos, conhece seus hábitos e sabe exatamente onde machucar. Para eles, uma caçada não começa quando o monstro aparece — ela começa semanas antes.",
+      "hitDice": "d8",
+      "skillPoints": 4,
+      "saves": ["Fortitude", "Reflex"],
+      "ab": "Fighter",
+      "classSkills": ["Disable Device", "Heal", "Hide", "Listen", "Conhecimento: Arcano", "Conhecimento: Masmorra", "Conhecimento: Geografia", "Conhecimento: História", "Conhecimento: Natureza", "Conhecimento: Planos", "Move Silently", "Open Locks", "Search", "Set Trap", "Spot", "Taunt", "Atléticos", "Acrobáticos", "Parry", "Sobrevivência", "Usar Cordas", "Discipline"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Inimigo Favorecido",
+          "description": "Concedido nos níveis 1, 3 e 5.",
+          "table": null
+        },
+        {
+          "name": "Caçador Implacável (3×/dia a partir do nível 2)",
+          "description": "Ao ativar a habilidade, o caçador recebe bônus igual a (Nível de Caçador + Nível de Ranger ÷ 5 + 1) em todos os ataques, danos, CA e saves contra qualquer um dos seus inimigos favorecidos, por 6 turnos + o dobro do nível de Caçador. Além disso, o caçador recebe um ataque extra no round.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Cavaleiro",
+      "description": "Antes chamados de Purple Dragon Knights, os Cavaleiros de Nordock são a liderança de campo encarnada. Não são apenas guerreiros bem treinados — são o catalisador que transforma um grupo de soldados em uma força coesa. Sua presença inspira; sua voz, ordena; e sua morte, se vier, geralmente vai junto com a de muitos inimigos.",
+      "hitDice": "d10",
+      "skillPoints": 2,
+      "saves": ["Fortitude"],
+      "ab": "Fighter",
+      "classSkills": ["Concentration", "Intimidate", "Parry", "Diplomacia", "Ride", "Atléticos"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Rallying Cry",
+          "description": "Bônus de movimento de 50%. Bônus de ataque e dano = 1 + (Nível de Cavaleiro ÷ 2). Duração: Nível de Cavaleiro + (Carisma ÷ 2) em rounds.",
+          "table": null
+        },
+        {
+          "name": "Heroic Shield",
+          "description": "Distância de alcance limitada a 20 ft.",
+          "table": null
+        },
+        {
+          "name": "Inspire Courage",
+          "description": "Bônus de AB/Dano = Nível de Cavaleiro ÷ 2. Imunidade a Medo e bônus de Carisma do Cavaleiro nas saves vs. Efeitos Mentais. DR = (Mod. Carisma ÷ 5) até um total de (2 × Carisma) × Nível de Cavaleiro. Duração: 10 rounds + modificador de Carisma.",
+          "table": null
+        },
+        {
+          "name": "Oath of Wrath",
+          "description": "Bônus em AB, Dano, Saves e Skills = Nível de Cavaleiro. Duração: Nível de Cavaleiro × Carisma em rounds.",
+          "table": null
+        },
+        {
+          "name": "Final Stand",
+          "description": "Cura 1d10 por nível de Cavaleiro. HP Temporário = 1d10 × Carisma.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Cavaleiro Arcano",
+      "description": "A maioria dos magos considera armadura um empecilho; a maioria dos guerreiros considera feitiços uma muleta. O Cavaleiro Arcano decidiu que as duas visões estavam erradas — e passou anos provando isso. Não são tão poderosos em magia quanto os magos, nem tão resistentes quanto os guerreiros puros. Mas na interseção dos dois, encontraram um nicho que poucos conseguem preencher.",
+      "hitDice": "d8",
+      "skillPoints": 2,
+      "saves": ["Fortitude"],
+      "ab": "Fighter",
+      "classSkills": ["Concentration", "Spellcraft", "Atléticos", "Decifrar Escrita", "Conhecimento: Arcano", "Conhecimento: Nobreza", "Sentir Motivação"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Arcane Spellcaster",
+          "description": "Recebe caster level arcano em todos os níveis de classe (slots, efeitos e jogadas de Spell Resistance).",
+          "table": null
+        },
+        {
+          "name": "Redução de Falha Arcana",
+          "description": "−5% de falha arcana por nível de Cavaleiro Arcano.",
+          "table": null
+        },
+        {
+          "name": "Feat Bônus (lista de Fighter)",
+          "description": "Concedido no 1º nível.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Pale Master",
+      "description": "Os Pale Masters não temem a morte — eles a estudam. Enquanto necromantes comuns usam os mortos como ferramentas, os Pale Masters buscam algo mais íntimo: uma compreensão da morte que vai além da magia. O resultado é uma figura que transita confortavelmente entre os vivos e os mortos, e que frequentemente já não pertence completamente a nenhum dos dois mundos.",
+      "hitDice": "d6",
+      "skillPoints": 2,
+      "saves": ["Will"],
+      "ab": "Mago",
+      "classSkills": ["Concentration", "Conhecimento (todos)", "Spellcraft", "Decifrar Escrita"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Arcane Spellcaster",
+          "description": "Recebe caster level arcano em todos os níveis de classe (slots, efeitos e Spell Resistance).",
+          "table": null
+        },
+        {
+          "name": "Controlar Mortos-Vivos (1×/dia a partir do nível 5)",
+          "description": "O Pale Master realiza um ataque de toque em um morto-vivo com HD igual ou inferior ao seu nível de conjurador. Em caso de sucesso, controla a criatura por (Nível de Pale Master + Carisma) turnos (se positivo).",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Shadow Dancer",
+      "description": "Os Shadow Dancers são figuras que caminham na fronteira entre luz e escuridão, não como meros usuários de sombras, mas como parte delas. Treinados em antigas tradições quase esquecidas, aprendem a dobrar a penumbra ao seu redor, movendo-se onde os olhos falham e desaparecendo onde a luz hesita. Para eles, a sombra não é ausência, mas sim o caminho, o refúgio e a arma. Diz-se que um verdadeiro Shadow Dancer não invade um espaço… ele simplesmente já estava lá, oculto, esperando o momento certo de surgir.",
+      "hitDice": "d8",
+      "skillPoints": 6,
+      "saves": ["Reflex"],
+      "ab": "Rogue",
+      "classSkills": ["Disable Trap", "Hide", "Listen", "Move Silently", "Open Locks", "Parry", "Diplomacia", "Prestidigitação", "Search", "Set Trap", "Spot", "Use Magic Device", "Appraise", "Acrobáticos", "Bluff", "Intimidate", "Perform", "Atléticos", "Decifrar Escrita", "Disfarce", "Arte da Fuga", "Falsificação", "Conhecimento: Local", "Sentir Motivação", "Usar Cordas"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Shadow Evade",
+          "description": "Duração modificada para: Nível de Shadow Dancer + (Bônus total de Perform ÷ 2) em turnos.",
+          "table": null
+        },
+        {
+          "name": "Shadow Jump (a partir do nível 4)",
+          "description": "O Shadow Dancer viaja instantaneamente de um ponto a outro utilizando o Plano das Sombras como atalho. A distância total disponível é consumida a cada uso e se renova a cada descanso. O gasto mínimo por uso é de 10 ft. Acumula com o Salto das Sombras racial do Shadar-Kai.",
+          "table": {
+            "headers": ["Nível de Shadow Dancer", "Distância Total Disponível"],
+            "rows": [
+              ["4",  "40 ft"],
+              ["6",  "80 ft"],
+              ["8",  "160 ft"],
+              ["10", "320 ft"]
+            ]
+          }
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Shifter",
+      "description": "Para o Shifter, a forma é apenas uma sugestão. Enquanto outros druidas se limitam a transformações definidas por sua tradição, o Shifter foi além — muito além. Eles não copiam a forma de criaturas como um exercício de magia; eles as estudam, as absorvem e as tornam parte de si. O resultado é uma classe de prestígio que, nos níveis altos, pode literalmente ser qualquer coisa.",
+      "hitDice": "d8",
+      "skillPoints": 4,
+      "saves": ["Fortitude", "Will"],
+      "ab": "Fighter",
+      "classSkills": ["Animal Empathy", "Concentration", "Heal", "Parry", "Spellcraft", "Atléticos", "Sobrevivência", "Conhecimento: Natureza"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Metamorfose Aprimorada (3×/dia)",
+          "description": "O Shifter consegue copiar a forma de outras criaturas e se transformar nelas posteriormente. As transformações escalam com o nível de Shifter e o nível total do personagem. O alvo não pode ter mais Dados de Vida do que o Shifter.",
+          "table": {
+            "headers": ["Nível de Shifter", "Tipos de Criaturas Disponíveis"],
+            "rows": [
+              ["1",  "Humanoide Médio"],
+              ["2",  "Animal e Humanoide Monstruoso"],
+              ["3",  "Fada e Besta"],
+              ["4",  "Gigante e Vermin"],
+              ["5",  "Besta Mágica"],
+              ["6",  "Aberração"],
+              ["7",  "Ooze e Dragão"],
+              ["8",  "Morto-Vivo"],
+              ["9",  "Constructo"],
+              ["10", "Elemental"]
+            ]
+          }
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    },
+    {
+      "type": "prestígio",
+      "name": "Teurgista Místico",
+      "description": "A maioria dos estudiosos de magia escolhe um caminho — arcano ou divino — e passa a vida inteira nele. O Teurgista Místico recusou essa escolha. Dedicando-se a ambas as tradições com igual afinco, descobriram que os dois caminhos não são opostos, mas complementares. O resultado é um conjurador de rara versatilidade — e de demanda igualmente rara por tempo de estudo.",
+      "hitDice": "d6",
+      "skillPoints": 2,
+      "saves": ["Will"],
+      "ab": "Mago",
+      "classSkills": ["Concentration", "Conhecimento: Arcano", "Conhecimento: Religioso", "Spellcraft", "Decifrar Escrita", "Sentir Motivação"],
+      "image": "",
+      "abilities": [
+        {
+          "name": "Arcane Spellcaster",
+          "description": "O Teurgista recebe caster level arcano E divino em todos os níveis de classe, contando para slots, efeitos de magia e jogadas de Spell Resistance.",
+          "table": null
+        }
+      ],
+      "spellList": null,
+      "progression": null
+    }
+  ]
+}

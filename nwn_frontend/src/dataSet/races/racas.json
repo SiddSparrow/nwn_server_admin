@@ -1,0 +1,253 @@
+{
+  "races": [
+    {
+      "race": "Humano",
+      "description": "Dentre todas as raças que habitam Nordock, nenhuma é tão onipresente quanto os humanos. Adaptáveis, ambiciosos e incansavelmente curiosos, eles se espalharam por cada canto do continente, erguendo cidades, forjando impérios e deixando sua marca em cada recanto do mundo conhecido. Onde há estradas, há humanos; onde há comércio, há humanos; onde há conflito, invariavelmente, há humanos. Sua maior força reside não na magia ou na força bruta, mas na diversidade — de culturas, de crenças, de ambições. Os grandes centros humanos de Nordock são Tobaro, a vibrante cidade comercial do continente; Hollows, portal para o inexplicável; e Kabu, assentamento marcado pela dureza e pela luta pela sobrevivência. Se há algo que define os humanos, é sua recusa obstinada em aceitar limites. Onde outras raças levam séculos para mudar, os humanos transformam o mundo em uma única geração.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Características: Padrão — sem modificadores de atributo." }
+      ],
+      "image": "humano.png"
+    },
+    {
+      "race": "Anão do Escudo",
+      "description": "Nativos de Nordock, os anões do escudo são o retrato vivo da memória longa e da teimosia honrada. Fechados com estranhos, desconfiados por natureza e fervorosamente devotos às suas tradições, carregam o peso da história de seu povo como uma armadura — pesada, mas necessária. Para eles, os costumes não são meros hábitos: são o fio que os mantém unidos diante de tudo que o mundo já lhes tirou. Há milênios, os anões fincaram raízes no solo de Nordock e jamais cederam um palmo de terra sem derramar muito sangue. Dos primeiros assentamentos nas Colinas Negras, onde travaram guerras brutais contra os temíveis Pituk durante séculos, até a amarga retirada que os forçou a reconstruir seu reino nas antigas Montanhas dos Gigantes.",
+      "personalidades": [
+        { "name": "Signar Goldhammer", "description": "Grande herói e criador da técnica dos defensores anões." },
+        { "name": "Rugnard Ragnar", "description": "Herói de guerra anão." },
+        { "name": "Bill Fúria da Guerra", "description": "Importante mago rúnico e sacerdote de Moradin." },
+        { "name": "Thorghard Bal-Aruk", "description": "Sumo-sacerdote de Moradin." }
+      ],
+      "traits": [
+        { "description": "Constituição: +2" }
+      ],
+      "image": "anao_escudo.png"
+    },
+    {
+      "race": "Anão Dourado",
+      "description": "Forjados em terras distantes e moldados por longas jornadas, os anões dourados trazem consigo uma abertura de espírito que surpreende quem esperava encontrar o isolamento típico de sua raça. Comerciantes habilidosos, aventureiros experientes e devotos sinceros, transitam com facilidade entre diferentes culturas — e são os anões mais frequentemente encontrados fora dos portões da Forja Trovejante. Com a chegada de clãs oriundos de Faerûn e os reveses trazidos por guerras e catástrofes, os anões dourados passaram a dividir o continente em número quase igual aos anões do escudo.",
+      "personalidades": [
+        { "name": "Agata Ragnar", "description": "Heroína anã e sacerdotisa de Moradin." },
+        { "name": "Caingard Machado de Pedra", "description": "A maior comerciante anã da história do continente." },
+        { "name": "Durin Ragnar I", "description": "Rei anão." }
+      ],
+      "traits": [
+        { "description": "Carisma: +2" }
+      ],
+      "image": "anao_dourado.png"
+    },
+    {
+      "race": "Gnomo",
+      "description": "Poucos são os gnomos que ainda se veem por Nordock. Outrora numerosos e vibrantes, o povo gnômico foi devastado pela Marcha de Myrkul — tragédia que varreu suas maiores comunidades em Várion e Sholo de uma forma que poucos sobreviventes conseguem descrever sem que a voz falhe. Os que conseguiram fugir a tempo buscaram refúgio em Tobaro e Hollows. Outros simplesmente desapareceram nas estradas e florestas de Nordock. Ninguém sabe ao certo quantos ainda vagam por aí, escondidos, esperando. Talvez alguns jamais tenham chegado a lugar algum. Talvez outros tenham escolhido não chegar. Os sobreviventes carregam consigo não apenas a dor da perda, mas também uma resiliência discreta e uma curiosidade intelectual que nenhuma calamidade foi capaz de apagar.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Inteligência: +2 (substitui o bônus padrão de Constituição)" }
+      ],
+      "image": "gnomo.png"
+    },
+    {
+      "race": "Halfling",
+      "description": "Os halflings nunca foram um povo de grandes exércitos ou impérios imponentes — e nunca precisaram ser. Com seus passos silenciosos, seu instinto aguçado e uma capacidade quase sobrenatural de se tornarem invisíveis quando precisam, sempre encontraram formas de sobreviver onde outros tropeçavam. Como os gnomos, os halflings sofreram pesadas perdas durante a Marcha de Myrkul. As comunidades de Várion e Sholo foram destruídas. Os sobreviventes espalharam-se por Tobaro e Hollows, e estima-se que muitos outros simplesmente se embrenharam pelo interior do continente, vivendo nas sombras dos grandes povoados humanos — passando despercebidos, como sempre fizeram. Encontrar um halfling de confiança é uma dádiva. Perdê-lo de vista por um instante é uma quase certeza.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Destreza: +2" }
+      ],
+      "image": "halfling.png"
+    },
+    {
+      "race": "Elfo da Lua",
+      "description": "Em Nordock, os elfos sempre foram um povo à parte. O coração de sua civilização está em Thyatis, a esplêndida cidade élfica encravada no sudoeste do continente, cercada pela floresta de Bria. Com o avanço sombrio dos domínios de Ravenloft sobre Benzor, o povo élfico fechou a ponte e recolheu-se para dentro de suas muralhas. Graciosos e noturnos por natureza, os elfos da lua são os mais contemplativos de sua raça. Sentem-se igualmente à vontade sob o luar silencioso e nos salões iluminados das cidades. Sua agilidade refinada é quase uma extensão da própria personalidade — fluida, imprevisível e elegante.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Destreza: +2" }
+      ],
+      "image": "elfo_lua.png"
+    },
+    {
+      "race": "Elfo Solar",
+      "description": "Em Nordock, os elfos sempre foram um povo à parte. O coração de sua civilização está em Thyatis, a esplêndida cidade élfica encravada no sudoeste do continente, cercada pela floresta de Bria. Com o avanço sombrio dos domínios de Ravenloft sobre Benzor, o povo élfico fechou a ponte e recolheu-se para dentro de suas muralhas. Os elfos solares cultivam a mente com o mesmo rigor com que outros cultivam a espada. São estudiosos, estrategistas e conselheiros — rara é a corte que não desejaria ter um elfo solar ao seu lado. Sua mente afiada é sua maior arma, e eles sabem bem disso.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Inteligência: +2" }
+      ],
+      "image": "elfo_solar.png"
+    },
+    {
+      "race": "Elfo Negro",
+      "description": "Carregar o nome de elfo negro em Nordock é, antes de qualquer coisa, carregar o peso de uma reputação sombria. Vindos das profundezas, marcados por séculos de uma cultura forjada na traição e na sobrevivência, os elfos negros que caminham entre as raças de superfície o fazem sempre sob um olhar de desconfiança — e, muitas vezes, um olhar justificado. Mas os que escolheram romper com o passado de seu povo são, sem exceção, indivíduos de força de vontade extraordinária.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Destreza: +2" },
+        { "description": "Carisma: +2" }
+      ],
+      "image": "elfo_negro.png"
+    },
+    {
+      "race": "Meio-Elfo",
+      "description": "Considerados humanos demais pelos elfos e élficos demais pelos humanos, os meio-elfos de Nordock aprenderam cedo que o pertencimento é algo que se conquista, não se herda. Talvez por isso sejam tão habilidosos nas artes da diplomacia e do comércio — ninguém sabe navegar entre dois mundos melhor do que aquele que nunca pertenceu completamente a nenhum deles. São uma das raças mais comuns em Nordock, especialmente em Tobaro, onde o fluxo constante de gentes diversas cria terreno fértil para quem sabe transitar entre culturas. Muitos se tornam mercadores; outros, exploradores; outros ainda, pontes vivas entre o mundo humano e o élfico.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Carisma: +2" },
+        { "description": "Proficiência com armas élficas: Arco Longo, Arco Curto, Espada Longa e Sabre." }
+      ],
+      "image": "meio-elfo.png"
+    },
+    {
+      "race": "Meio-Orc Pituk",
+      "description": "Os meio-orcs Pituk cresceram escravizados e humilhados pelos próprios orcs, tratados como impuros por não possuírem sangue puro. Esse passado gerou neles um ódio profundo e uma determinação implacável — ninguém luta com mais fúria do que aquele que tem uma conta aberta com seu algoz. Descendentes do clã Pituk, do sul de Nordock, carregam em cada cicatriz a memória de uma infância forjada na humilhação e na sobrevivência.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Constituição: +2" },
+        { "description": "Ódio Ancestral: +2 em rolagens de ataque e dano contra orcs." }
+      ],
+      "image": "meio_pituk.png"
+    },
+    {
+      "race": "Meio-Orc Uruk",
+      "description": "Criados em meio à batalha constante pelo território no norte, ou lançados na dureza selvagem de Kabu, onde a sobrevivência não é uma escolha — é a única coisa que existe. Os meio-orcs Uruk foram moldados pela guerra desde o nascimento. Sua resistência é lendária e sua vontade de sobreviver, quase sobrenatural. Descendentes do clã Uruk, carregam no sangue tanto a brutalidade dos campos de batalha quanto uma tenacidade que poucos conseguem igualar.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Força: +2" },
+        { "description": "Última Resistência (1×/dia): Ao cair abaixo de 0 PV pela primeira vez, o meio-orc se ergue com PV iguais ao seu nível + modificador de Constituição, e recebe Redução de Dano 5/+5 por 12 segundos." }
+      ],
+      "image": "meio_uruk.png"
+    },
+    {
+      "race": "Aasimar",
+      "description": "Descendentes de planares de alinhamento benigno, os aasimar transitam pelo mundo carregando uma herança luminosa que nem sempre se reflete em seu caráter — mas que quase sempre influencia seus impulsos. Os olhos esbranquiçados que parecem guardar luz própria, ou os cabelos com brilho metálico que cobre a maioria deles, denunciam a origem que não conseguem esconder por muito tempo. Tendem à bondade não por ingenuidade, mas por uma inclinação profunda, quase visceral, que o sangue planar imprime neles. Ainda assim, aasimar sombrios existem — e quando um ser com tal herança escolhe o caminho da escuridão, o resultado costuma ser perturbador. Com a abertura da Fenda Planar de Hollows, sua presença em Nordock tornou-se cada vez mais comum.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Sabedoria: +2" },
+        { "description": "Diplomacia e Percepção (Spot): +2" },
+        { "description": "Visão no Escuro (Darkvision)" },
+        { "description": "Resistência Elemental (Ácido, Frio, Elétrico): 5" },
+        { "description": "Luz (1×/dia): Luz intensa com nível de conjurador igual ao nível do personagem." }
+      ],
+      "image": "aasimar.png"
+    },
+    {
+      "race": "Tiefling",
+      "description": "Se os aasimar carregam a luz nos olhos, os tieflings carregam a sombra na pele. Descendentes de demônios, diabos e outros seres de planos sombrios, raramente passam despercebidos: pele avermelhada, chifres discretos ou proeminentes, caudas que se enrolam nervosamente — ou apenas um par de olhos felinos que revelam algo além do humano. Aqueles com um parentesco planar mais distante podem parecer quase inteiramente humanos, exceto por aquele detalhe sutil que nunca convence completamente quem os observa. São criaturas de contradições: frequentemente isolados pela desconfiança alheia, aprendem desde cedo as artes da dissimulação e do sigilo. Nem todos buscam o mal — mas todos carregam as ferramentas para ele.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Inteligência: +2" },
+        { "description": "Furtividade (Hide) e Blefe (Bluff): +2" },
+        { "description": "Visão no Escuro (Darkvision)" },
+        { "description": "Resistência Elemental (Fogo, Frio, Elétrico): 5" },
+        { "description": "Escuridão (1×/dia): Nível de conjurador igual ao nível total do personagem." }
+      ],
+      "image": "tiefling.png"
+    },
+    {
+      "race": "Shadar-Kai",
+      "description": "Surgiram em Nordock logo após a Guerra da Rainha Louca, junto com o aparecimento da Planície das Sombras — e desde então, são um mistério que o continente aprendeu a temer, mas nunca a compreender. Pele acinzentada como cinza velha, piercings corporais e tatuagens que contam histórias que ninguém sabe ler, cabelos que variam do negro absoluto ao cinza etéreo. Os relatos sobre sua hostilidade são contraditórios: alguns afirmam ter sido atacados; outros dizem ter sido salvos quando se perderam na Planície. O consenso geral permanece o mesmo: mantenha distância deles — e, principalmente, da Planície. Possuem a habilidade inata de desaparecer diante dos próprios olhos de quem os observa.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Destreza: +2" },
+        { "description": "Furtividade (Hide), Movimento Silencioso e Acrobacia: +2" },
+        { "description": "Resistência a Efeitos de Morte: +2" },
+        { "description": "Visão no Escuro (Darkvision)" },
+        { "description": "Weapon Finesse: Concedido automaticamente." },
+        { "description": "Salto das Sombras (40 ft/dia): Teleporte via sombras, limitado pela linha de visão. A distância total acumulada é de 40 ft por dia. Somado ao salto da classe Dançarino das Sombras, se aplicável." }
+      ],
+      "image": "shadarkai.png"
+    },
+    {
+      "race": "Genasi da Terra",
+      "description": "Filhos do elemento e do plano, os genasi carregam em seu sangue a essência bruta da criação. Sólidos como pedra, pacientes como montanhas — os genasi da terra raramente se apressam, mas quando se movem, dificilmente algo consegue detê-los. Sua conexão com a rocha e o solo os torna escaladores naturais e guerreiros de resistência considerável. Em Nordock, são raros — mas inconfundíveis.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Força: +2" },
+        { "description": "Escalada: Sucesso automático em rolagens de escalada." },
+        { "description": "Herança da Pedra (1×/dia): Proteção similar a Stoneskin, RD 5/+5 por 1 hora/nível. Pontos absorvidos = nível × (Constituição ÷ 2)." }
+      ],
+      "image": "genasi_terra.png"
+    },
+    {
+      "race": "Genasi da Água",
+      "description": "Filhos do elemento e do plano, os genasi carregam em seu sangue a essência bruta da criação. Fluidos, adaptativos e profundos — os genasi da água possuem uma percepção aguçada do mundo ao redor. O elemento que os define não os preenche apenas de poder, mas de uma consciência de fluxo e equilíbrio que outros raramente alcançam. Em Nordock, são raros — mas inconfundíveis.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Sabedoria: +2" },
+        { "description": "Imunidade a Afogamento" },
+        { "description": "Imunidade Parcial ao Frio: 25%" },
+        { "description": "Redução de Dano Elemental (Frio): 5" }
+      ],
+      "image": "genasi_agua.png"
+    },
+    {
+      "race": "Genasi do Ar",
+      "description": "Filhos do elemento e do plano, os genasi carregam em seu sangue a essência bruta da criação. Leves, imprevisíveis e constantemente em movimento — os genasi do ar são difíceis de acertar, literal e figurativamente. Sua presença traz consigo uma carga estática que faz projéteis hesitarem, como se o próprio ar ao redor deles os protegesse. Em Nordock, são raros — mas inconfundíveis.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Destreza: +2" },
+        { "description": "Imunidade a Afogamento" },
+        { "description": "Deflexão Estática: Ataques físicos à distância têm chance de ser defletidos. % de deflexão = Destreza + (nível ÷ 2)." }
+      ],
+      "image": "genasi_ar.png"
+    },
+    {
+      "race": "Genasi do Fogo",
+      "description": "Filhos do elemento e do plano, os genasi carregam em seu sangue a essência bruta da criação. Intensos, brilhantes e frequentemente perigosos — os genasi do fogo ardem por dentro. Sua inteligência é aguçada e sua presença, difícil de ignorar. São criaturas de extremos: ou fascinam ou assustam, raramente deixando alguém indiferente. Em Nordock, são raros — mas inconfundíveis.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Inteligência: +2" },
+        { "description": "Imunidade Parcial ao Fogo: 25%" },
+        { "description": "Redução de Dano Elemental (Fogo): 5" }
+      ],
+      "image": "genasi_fogo.png"
+    },
+    {
+      "race": "Minotauro",
+      "description": "Imponentes e de presença avassaladora, os minotauros de Nordock são criaturas de força bruta e sentidos aguçados. Sua aparência intimida antes mesmo que falem — e quando falam, costumam ser diretos ao ponto. Sob a tutela de Longinus, alguns aprenderam a conviver com raças menores com uma brutalidade contida, ainda que nunca completamente domesticada. Não são bem-vindos como residentes nas cidades, mas podem ser encontrados nos portos e nas cercanias de Hollows e Tobaro.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Força: +2" },
+        { "description": "Constituição: +2" },
+        { "description": "Sabedoria: −2" },
+        { "description": "Classe de Armadura: +2" },
+        { "description": "Visão no Escuro (Darkvision)" }
+      ],
+      "image": "minotauro.png"
+    },
+    {
+      "race": "Goblin",
+      "description": "Pequenos, rápidos e consideravelmente mais inteligentes do que seu tamanho sugere, os goblins de Nordock sobreviveram milênios de perseguição desenvolvendo um instinto aguçado para armadilhas, esconderijos e fuga. Em Longinus, encontraram algo raro em suas histórias: um lugar onde não são simplesmente caçados. Não são bem-vindos como residentes nas cidades, mas podem ser encontrados nos portos e nas cercanias de Hollows e Tobaro.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Destreza: +2" },
+        { "description": "Carisma: −2" },
+        { "description": "Porte Pequeno: +4 em Furtividade (Hide), +1 CA e +1 AB" },
+        { "description": "Movimento Silencioso: +4" },
+        { "description": "Busca, Armadilhas, Desarmar Dispositivos e Disfarce: +2 em cada" },
+        { "description": "Visão no Escuro (Darkvision)" }
+      ],
+      "image": "goblin.png"
+    },
+    {
+      "race": "Dríade",
+      "description": "Guardiãs de florestas antigas e segredos mais antigos ainda, as dríades são criaturas de uma beleza que desorientou mais de um aventureiro imprudente. Seu vínculo com a natureza não é apenas espiritual — é físico, manifestando-se em uma resiliência vegetal que a maioria dos inimigos subestima, para seu próprio detrimento. Vindas dos recantos mais encantados e inóspitos das florestas de Nordock, são seres imbuídos de uma magia antiga — não a magia dos grimórios e das torres, mas aquela que cresceu junto com as raízes das árvores e o murmúrio dos rios.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Sabedoria: +2" },
+        { "description": "Destreza: +1" },
+        { "description": "Visão na Penumbra (Low-Light Vision)" },
+        { "description": "Casca da Floresta (1×/dia): Proteção similar a Barkskin, com nível de conjurador igual ao nível total do personagem." }
+      ],
+      "image": "driade.png"
+    },
+    {
+      "race": "Sátiro",
+      "description": "Metade humano, metade criatura dos bosques, o sátiro é um ser de contradições encantadoras. Sua natureza exuberante e sua presença magnética contrastam com os chifres e pernas caprinas que denunciam imediatamente que há algo além do humano ali. São criaturas de instinto aguçado — ouvem o que outros não ouvem, percebem o que outros não percebem, e raramente estão onde se espera encontrá-los. Vindos dos recantos mais encantados das florestas de Nordock, são seres imbuídos de uma magia antiga e selvagem.",
+      "personalidades": [],
+      "traits": [
+        { "description": "Carisma: +2" },
+        { "description": "Visão na Penumbra (Low-Light Vision)" },
+        { "description": "Visão no Escuro (Darkvision)" },
+        { "description": "Movimento Silencioso e Furtividade (Hide): +2" },
+        { "description": "Busca (Search), Percepção (Spot) e Escuta (Listen): +2" }
+      ],
+      "image": "satiro.png"
+    }
+  ]
+}
