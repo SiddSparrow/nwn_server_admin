@@ -79,8 +79,19 @@ export const PlayersAdmin: React.FC = () => {
 
   return (
     <div>
-      <div className="bg-white/10 border-b border-white/20 px-6 py-3">
+      <div className="bg-white/10 border-b border-white/20 px-6 py-3 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-white">Jogadores</h2>
+        <span className="text-[11px] text-white/60">
+          Total:{' '}
+          <span className="font-semibold text-white">{players.length}</span>
+          {search.trim() && (
+            <>
+              {' '}
+              · Filtrados:{' '}
+              <span className="font-semibold text-white">{filtered.length}</span>
+            </>
+          )}
+        </span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-[320px_1fr]">
         <aside className="border-b md:border-b-0 md:border-r border-white/10 px-4 py-4">
@@ -134,13 +145,23 @@ export const PlayersAdmin: React.FC = () => {
           )}
           {selected && (
             <>
-              <div className="mb-4">
-                <h3 className="text-white text-sm font-semibold">
-                  {selected.account_name}
-                </h3>
-                <p className="text-white/40 text-[11px] font-mono">
-                  {selected.serial_key}
-                </p>
+              <div className="mb-4 flex items-start justify-between gap-3">
+                <div>
+                  <h3 className="text-white text-sm font-semibold">
+                    {selected.account_name}
+                  </h3>
+                  <p className="text-white/40 text-[11px] font-mono">
+                    {selected.serial_key}
+                  </p>
+                </div>
+                {!loadingChars && !charsError && (
+                  <span className="shrink-0 text-[11px] text-white/60">
+                    Personagens:{' '}
+                    <span className="font-semibold text-white">
+                      {characters.length}
+                    </span>
+                  </span>
+                )}
               </div>
 
               {loadingChars && (
