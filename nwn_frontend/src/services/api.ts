@@ -45,6 +45,7 @@ export interface AdminPlayer {
 export interface AdminCharacter {
   file: string;
   name: string;
+  level: number;
 }
 
 export function fetchAdminPlayers(token: string): Promise<AdminPlayer[]> {

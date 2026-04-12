@@ -162,12 +162,17 @@ export const PlayersAdmin: React.FC = () => {
                       key={c.file}
                       className="px-4 py-2 flex items-center justify-between gap-3 hover:bg-white/5"
                     >
-                      <div className="flex-1 min-w-0">
-                        <div className="text-white text-xs font-medium truncate">
-                          {c.name}
-                        </div>
-                        <div className="text-white/40 text-[10px] font-mono truncate">
-                          {c.file}
+                      <div className="flex-1 min-w-0 flex items-center gap-2">
+                        <span className="shrink-0 inline-flex items-center justify-center min-w-[28px] h-5 px-1.5 rounded-md text-[10px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                          {c.level}
+                        </span>
+                        <div className="min-w-0">
+                          <div className="text-white text-xs font-medium truncate">
+                            {c.name}
+                          </div>
+                          <div className="text-white/40 text-[10px] font-mono truncate">
+                            {c.file}
+                          </div>
                         </div>
                       </div>
                       <button
