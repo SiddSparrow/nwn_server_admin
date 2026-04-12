@@ -57,12 +57,22 @@ export const Header: React.FC<HeaderProps> = ({ page, onNavigate }) => {
                   Ambientação
                 </button>
               </li>
+              {username && (
+                <li>
+                  <button
+                    onClick={() => onNavigate('admin')}
+                    className={`hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium ${page === 'admin' ? 'text-white' : 'text-white/80'}`}
+                  >
+                    Admin
+                  </button>
+                </li>
+              )}
               <li>
                 {username ? (
                   <div className="flex items-center gap-2">
                     <span className="text-white/60 text-xs hidden sm:inline">{username}</span>
                     <button
-                      onClick={logout}
+                      onClick={() => { logout(); onNavigate('home'); }}
                       className="text-white/80 hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium"
                     >
                       Sair
@@ -73,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({ page, onNavigate }) => {
                     onClick={() => setLoginOpen(true)}
                     className="text-white/80 hover:text-white transition-colors duration-200 text-xs sm:text-sm font-medium"
                   >
-                    Admin
+                    Login
                   </button>
                 )}
               </li>

@@ -1,1 +1,1 @@
-export type Page = 'home' | 'regras' | 'racas' | 'classes' | 'skills' | 'feats';
+export type Page = 'home' | 'regras' | 'racas' | 'classes' | 'skills' | 'feats' | 'admin';

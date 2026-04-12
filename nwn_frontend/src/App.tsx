@@ -8,6 +8,7 @@ import nordockMap from './media/img/mapas/mundo/Nordock.webp';
 import { Page } from './types';
 import { Skills } from './components/Skills/Skills';
 import { Feats } from './components/Feats/Feats';
+import { Admin } from './components/Admin/Admin';
 import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             {page === 'classes' && <Classes />}
             {page === 'skills' && <Skills />}
             {page === 'feats' && <Feats />}
+            {page === 'admin' && <Admin />}
           </main>
         </div>
       </div>
