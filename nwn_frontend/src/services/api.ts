@@ -45,3 +45,16 @@ export function fetchAdminPlayerCharacters(
     })
     .then((res) => res.data);
 }
+
+export function deleteAdminCharacter(
+  serialKey: string,
+  filename: string,
+  token: string,
+): Promise<{ moved_to: string }> {
+  return api
+    .delete<{ moved_to: string }>(
+      `/admin/players/${encodeURIComponent(serialKey)}/characters/${encodeURIComponent(filename)}`,
+      { headers: { Authorization: `Bearer ${token}` } },
+    )
+    .then((res) => res.data);
+}

@@ -3,6 +3,7 @@ import { useAuth } from '../../contexts/AuthContext';
 import {
   AdminCharacter,
   AdminPlayer,
+  deleteAdminCharacter,
   fetchAdminPlayerCharacters,
   fetchAdminPlayers,
 } from '../../services/api';
@@ -17,6 +18,7 @@ export const PlayersAdmin: React.FC = () => {
   const [characters, setCharacters] = useState<AdminCharacter[]>([]);
   const [loadingChars, setLoadingChars] = useState(false);
   const [charsError, setCharsError] = useState<string | null>(null);
+  const [deletingFile, setDeletingFile] = useState<string | null>(null);
 
   useEffect(() => {
     if (!token) return;
@@ -43,6 +45,26 @@ export const PlayersAdmin: React.FC = () => {
         .finally(() => setLoadingChars(false));
     },
     [token],
+  );
+
+  const handleDelete = useCallback(
+    async (char: AdminCharacter) => {
+      if (!token || !selected) return;
+      const confirmed = window.confirm(
+        `Tem certeza que deseja apagar "${char.name}" (${char.file})?\n\nO arquivo será movido para a pasta de backup e pode ser restaurado.`,
+      );
+      if (!confirmed) return;
+      setDeletingFile(char.file);
+      try {
+        await deleteAdminCharacter(selected.serial_key, char.file, token);
+        setCharacters((prev) => prev.filter((c) => c.file !== char.file));
+      } catch (e: any) {
+        alert(e?.response?.data?.message ?? 'Erro ao apagar personagem');
+      } finally {
+        setDeletingFile(null);
+      }
+    },
+    [token, selected],
   );
 
   const filtered = useMemo(() => {
@@ -138,12 +160,23 @@ export const PlayersAdmin: React.FC = () => {
                   {characters.map((c) => (
                     <li
                       key={c.file}
-                      className="px-4 py-2 flex items-center justify-between hover:bg-white/5"
+                      className="px-4 py-2 flex items-center justify-between gap-3 hover:bg-white/5"
                     >
-                      <span className="text-white text-xs font-medium">{c.name}</span>
-                      <span className="text-white/40 text-[10px] font-mono">
-                        {c.file}
-                      </span>
+                      <div className="flex-1 min-w-0">
+                        <div className="text-white text-xs font-medium truncate">
+                          {c.name}
+                        </div>
+                        <div className="text-white/40 text-[10px] font-mono truncate">
+                          {c.file}
+                        </div>
+                      </div>
+                      <button
+                        onClick={() => handleDelete(c)}
+                        disabled={deletingFile === c.file}
+                        className="shrink-0 px-3 py-1 rounded-md text-[11px] font-medium bg-red-500/20 text-red-300 hover:bg-red-500/30 border border-red-500/30 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      >
+                        {deletingFile === c.file ? 'Apagando...' : 'Apagar'}
+                      </button>
                     </li>
                   ))}
                 </ul>
