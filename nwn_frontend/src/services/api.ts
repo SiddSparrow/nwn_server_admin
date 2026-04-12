@@ -19,6 +19,24 @@ export function serverAction(action: 'start' | 'stop' | 'restart', token: string
     .then((res) => res.data);
 }
 
+export function fetchServerStatus(token: string): Promise<{ running: boolean }> {
+  return api
+    .get<{ running: boolean }>('/server/status', {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+    .then((res) => res.data);
+}
+
+export function updateNwsync(token: string): Promise<{ ok: boolean; message: string }> {
+  return api
+    .post<{ ok: boolean; message: string }>(
+      '/server/nwsync',
+      {},
+      { headers: { Authorization: `Bearer ${token}` } },
+    )
+    .then((res) => res.data);
+}
+
 export interface AdminPlayer {
   account_name: string;
   serial_key: string;
