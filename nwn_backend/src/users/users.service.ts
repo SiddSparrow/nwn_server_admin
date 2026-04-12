@@ -15,7 +15,10 @@ export class UsersService {
     return this.repo.findOne({ where: { username } });
   }
 
-  async create(username: string, password: string): Promise<{ id: number; username: string }> {
+  async create(
+    username: string,
+    password: string,
+  ): Promise<{ id: number; username: string }> {
     const exists = await this.findByUsername(username);
     if (exists) throw new ConflictException('Username already taken');
 

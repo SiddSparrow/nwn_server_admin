@@ -14,7 +14,12 @@ import { ApiKeyGuard } from '../common/guards/api-key.guard';
       inject: [ConfigService],
       useFactory: (config: ConfigService) => ({
         secret: config.getOrThrow<string>('JWT_SECRET'),
-        signOptions: { expiresIn: (config.get<string>('JWT_EXPIRES_IN', '8h')) as `${number}${'s'|'m'|'h'|'d'}` },
+        signOptions: {
+          expiresIn: config.get<string>(
+            'JWT_EXPIRES_IN',
+            '8h',
+          ) as `${number}${'s' | 'm' | 'h' | 'd'}`,
+        },
       }),
     }),
   ],

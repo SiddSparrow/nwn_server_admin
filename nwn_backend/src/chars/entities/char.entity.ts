@@ -1,4 +1,10 @@
-import { Column, Entity, ManyToOne, JoinColumn, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  ManyToOne,
+  JoinColumn,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 import { Player } from '../../players/entities/player.entity';
 
 @Entity({ schema: 'chars', name: 'chars' })
