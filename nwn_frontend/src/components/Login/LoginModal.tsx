@@ -38,7 +38,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="bg-white/10 border-b border-white/20 px-6 py-3 flex items-center justify-between">
-          <h2 className="text-lg font-semibold text-white">Login Admin</h2>
+          <h2 className="text-lg font-semibold text-white">Login</h2>
           <button
             onClick={onClose}
             className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white text-sm flex items-center justify-center transition-colors"

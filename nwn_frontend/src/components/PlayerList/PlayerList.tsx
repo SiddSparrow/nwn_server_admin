@@ -29,9 +29,18 @@ export const PlayerList: React.FC = () => {
 
   return (
     <div className="w-full max-w-3xl">
-      <h2 className="text-lg sm:text-xl font-semibold text-white mb-4">
-        Jogadores Online — {players.length}
-      </h2>
+      <div className="flex items-center gap-2.5 mb-3.5">
+        <h2 className="text-lg font-semibold text-white/90 font-serif m-0">
+          Jogadores Online
+        </h2>
+        <span className="text-xs font-semibold font-sans bg-white/10 border border-white/15 rounded-full px-2.5 py-0.5 text-white/70">
+          {players.length}
+        </span>
+        <span className="ml-auto text-xs font-sans text-[#4ade80] flex items-center gap-1.5">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] inline-block" />
+          Servidor Online
+        </span>
+      </div>
       <PlayerTable players={players} />
     </div>
   );

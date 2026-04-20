@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header/Header';
 import { PlayerList } from './components/PlayerList/PlayerList';
+import { NavCards } from './components/NavCards/NavCards';
 import { Regras } from './components/Regras/Regras';
 import { Racas } from './components/Racas/Racas';
 import { Classes } from './components/Classes/Classes';
@@ -26,7 +27,10 @@ function App() {
         <div className="relative z-10">
           <Header page={page} onNavigate={setPage} />
           <main className="flex flex-col items-center pt-28 px-6">
-            {page === 'home' && <PlayerList />}
+            {page === 'home' && <>
+            <PlayerList />
+            <NavCards onNavigate={setPage} />
+          </>}
             {page === 'regras' && <Regras onNavigate={setPage} />}
             {page === 'racas' && <Racas />}
             {page === 'classes' && <Classes />}
