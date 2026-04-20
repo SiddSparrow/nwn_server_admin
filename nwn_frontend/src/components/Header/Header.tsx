@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import nordockMap from '../../media/img/mapas/mundo/Nordock.webp';
 import { Page } from '../../types';
 import { useAuth } from '../../contexts/AuthContext';
 import { LoginModal } from '../Login/LoginModal';
